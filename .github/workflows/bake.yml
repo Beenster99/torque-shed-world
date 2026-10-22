@@ -104,20 +104,19 @@ jobs:
     needs: [plan, bake]
     if: always() && needs.plan.outputs.cells != '[]'
     runs-on: ubuntu-latest
-    concurrency:
-      group: index
-      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           pattern: entry-*
           path: entries
+      # No concurrency group: a group keeps only one job waiting and cancels the one before, which lost two runs'
+      # cells when eight ran at once. Runs that push at the same moment fetch, merge their entries and try again.
       - name: Add the cells to the index
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for attempt in 1 2 3 4 5; do
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
             git fetch origin main && git reset --hard origin/main
             python3 scripts/index.py entries
             git add index.json
