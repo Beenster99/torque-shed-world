@@ -1,0 +1,129 @@
+name: Bake cells
+
+# Bakes cells of the world for Torque Shed (each a 0.25 degree square of its roads, buildings, places and land cover:
+# tools/region_bake.py --cell in Beenster99/torque-shed) and publishes them as release assets, one release per 5 degree
+# block, then adds them to index.json, which the game reads. Run it from the Actions tab (or the API) with the cells to
+# bake; cells the index already has for the release are skipped.
+
+on:
+  workflow_dispatch:
+    inputs:
+      cells:
+        description: "Points (LAT,LON: the cell it is in) or boxes (SOUTH,WEST,NORTH,EAST: every cell it touches), space-separated"
+        required: true
+      release:
+        description: "Overture release to bake from (empty: index.json's)"
+        required: false
+        default: ""
+      tools_ref:
+        description: "Branch, tag or commit of Beenster99/torque-shed whose tools/ bake them"
+        required: false
+        default: main
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      cells: ${{ steps.plan.outputs.cells }}
+      release: ${{ steps.plan.outputs.release }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: plan
+        env:
+          CELLS: ${{ inputs.cells }}
+          RELEASE: ${{ inputs.release }}
+        run: python3 scripts/plan.py "$CELLS" "$RELEASE" | tee -a "$GITHUB_OUTPUT"
+
+  bake:
+    needs: plan
+    if: needs.plan.outputs.cells != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        cell: ${{ fromJson(needs.plan.outputs.cells) }}
+    env:
+      ROW: ${{ matrix.cell[0] }}
+      COL: ${{ matrix.cell[1] }}
+      LAT: ${{ matrix.cell[2] }}
+      LON: ${{ matrix.cell[3] }}
+      RELEASE: ${{ needs.plan.outputs.release }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: Beenster99/torque-shed
+          ref: ${{ inputs.tools_ref }}
+          path: game
+          sparse-checkout: tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy pillow pyarrow
+      - name: Bake
+        run: |
+          NAME="c${ROW}_${COL}"
+          mkdir -p entries
+          set +e
+          python3 game/tools/region_bake.py --cell "$LAT" "$LON" --release "$RELEASE" --out "out/$NAME" 2>&1 | tee bake.log
+          code=${PIPESTATUS[0]}
+          set -e
+          if [ "$code" -ne 0 ]; then
+            if grep -q "no roads in that area" bake.log; then
+              echo "{\"cell\": \"${ROW}_${COL}\", \"release\": \"$RELEASE\", \"empty\": true}" > "entries/${NAME}.json"
+              exit 0
+            fi
+            exit "$code"
+          fi
+          python3 game/tools/region_zip.py "out/$NAME" cell.zip > entry.json
+          HASH=$(python3 -c "import json; print(list(json.load(open('entry.json')).values())[0]['hash'])")
+          BYTES=$(stat -c %s cell.zip)
+          # One release per 5 degree block: c<row>_<col> of a 0.25 degree grid, so a block is 20 rows by 20 columns.
+          TAG=$(python3 -c "r, c = $ROW, $COL; print('cells-$RELEASE-b%d_%d' % (r // 20, c // 20))")
+          ASSET="${NAME}-${HASH}.zip"
+          mv cell.zip "$ASSET"
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1 || \
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" \
+              --notes "Torque Shed cells baked from Overture release $RELEASE (rows $(( ROW / 20 * 20 ))-$(( ROW / 20 * 20 + 19 )), columns $(( COL / 20 * 20 ))-$(( COL / 20 * 20 + 19 )))." || true
+          gh release upload "$TAG" "$ASSET" --repo "$GITHUB_REPOSITORY" --clobber
+          URL="https://github.com/$GITHUB_REPOSITORY/releases/download/$TAG/$ASSET"
+          TOOLS=$(git -C game rev-parse --short HEAD)
+          echo "{\"cell\": \"${ROW}_${COL}\", \"release\": \"$RELEASE\", \"hash\": \"$HASH\", \"bytes\": $BYTES, \"url\": \"$URL\", \"tools\": \"$TOOLS\"}" > "entries/${NAME}.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: entry-${{ matrix.cell[0] }}_${{ matrix.cell[1] }}
+          path: entries/
+          retention-days: 3
+
+  index:
+    needs: [plan, bake]
+    if: always() && needs.plan.outputs.cells != '[]'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: index
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: entry-*
+          path: entries
+      - name: Add the cells to the index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main && git reset --hard origin/main
+            python3 scripts/index.py entries
+            git add index.json
+            git diff --cached --quiet && exit 0
+            git commit -m "Index: cells baked by run ${GITHUB_RUN_ID}"
+            git push origin HEAD:main && exit 0
+            sleep $((attempt * 5))
+          done
+          exit 1
