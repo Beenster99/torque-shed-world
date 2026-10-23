@@ -15,6 +15,9 @@ stitches them together; the land's heights come from [Mapterhorn](https://mapter
   own `tools/region_bake.py --cell`, 20 at a time, and adds them to the index. Give it points (`LAT,LON`) or boxes
   (`SOUTH,WEST,NORTH,EAST`); cells the index already has are skipped. A run bakes up to 250 cells.
 
+- `worker/`: the **survey** worker (Cloudflare, free plan) the game asks to bake cells nobody has baked yet, when a
+  crew presses Survey on the Route planner TV. See `worker/README.md` for setting it up.
+
 Nothing here runs or costs anything between bakes: Actions are free for a public repository, and release assets are
 served by GitHub.
 
