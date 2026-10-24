@@ -1,0 +1,56 @@
+name: Map the coast
+
+# Makes the coast (where the land is, for the Route planner TV close in) of every cell the index has
+# baked, and puts it in sketch/ and the index: for cells baked before coasts were made. Run it from the Actions tab.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tools_ref:
+        description: "Branch, tag or commit of Beenster99/torque-shed whose tools/ make the coasts"
+        required: false
+        default: main
+      only:
+        description: "Just this 5 degree block (R_C), or empty for all"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sketch
+  cancel-in-progress: false
+
+jobs:
+  coast:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Beenster99/torque-shed
+          ref: ${{ inputs.tools_ref }}
+          path: game
+          sparse-checkout: tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy pillow pyarrow
+      - name: Map the coast of every baked cell, and add it to the index
+        env:
+          ONLY: ${{ inputs.only }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main && git reset --hard origin/main
+            python3 scripts/coast_backfill.py game/tools ${ONLY:+--only "$ONLY"}
+            git add index.json sketch
+            git diff --cached --quiet && exit 0
+            git commit -m "The coast (run ${GITHUB_RUN_ID})"
+            git push origin HEAD:main && exit 0
+            sleep $((attempt * 10))
+          done
+          exit 1

@@ -81,9 +81,14 @@ jobs:
             exit "$code"
           fi
           python3 game/tools/region_zip.py "out/$NAME" cell.zip > entry.json
-          # Its main roads, for the TV's sketch between the globe and the roads (merged into sketch/ by the index).
+          # Its main roads, for the TV's sketch between the globe and the roads, and its coast for the TV close in
+          # (merged into sketch/ by the index). A coast that can't be had is left out, not the cell.
           if [ -f game/tools/sketch_bake.py ]; then
-            python3 game/tools/sketch_bake.py "out/$NAME" --out "entries/${NAME}.sketch"
+            COAST=""
+            if [ -f game/tools/coast_bake.py ] && python3 game/tools/coast_bake.py "$LAT" "$LON" --release "$RELEASE" --out coast.json; then
+              COAST="--coast coast.json"
+            fi
+            python3 game/tools/sketch_bake.py "out/$NAME" $COAST --out "entries/${NAME}.sketch"
           fi
           HASH=$(python3 -c "import json; print(list(json.load(open('entry.json')).values())[0]['hash'])")
           BYTES=$(stat -c %s cell.zip)

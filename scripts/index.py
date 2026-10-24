@@ -47,8 +47,8 @@ def block_of(cell):
 
 
 def merge_sketches(paths, index, root=ROOT):
-    """Puts the cell sketches at `paths` into their blocks' files under root/sketch, and each block's hash into
-    index["sketches"]. Returns how many were put in."""
+    """Puts the cell sketches at `paths` (main roads as "lines", a coast as "land", or both) into their blocks' files
+    under root/sketch, and each block's hash into index["sketches"]. Returns how many were put in."""
     by_block = {}
     for path in paths:
         with open(path) as f:
@@ -61,8 +61,14 @@ def merge_sketches(paths, index, root=ROOT):
             with open(path) as f:
                 data = json.load(f)
         for s in sketches:
-            data["cells"][s["cell"]] = s["lines"]
+            # (a sketch with only lines, or only land, a coast, changes just that)
+            if "lines" in s:
+                data["cells"][s["cell"]] = s["lines"]
+            if "land" in s:
+                data.setdefault("land", {})[s["cell"]] = s["land"]
         data["cells"] = dict(sorted(data["cells"].items()))
+        if "land" in data:
+            data["land"] = dict(sorted(data["land"].items()))
         text = json.dumps(data, separators=(",", ":"))
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w") as f:
