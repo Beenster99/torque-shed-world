@@ -1,4 +1,4 @@
-name: Map the coast
+name: Map the coast, or the bridges and tunnels
 
 # Makes the coast (where the land is, for the Route planner TV close in) of every cell the index has
 # baked, and puts it in sketch/ and the index: for cells baked before coasts were made. Run it from the Actions tab.
@@ -10,6 +10,10 @@ on:
         description: "Branch, tag or commit of Beenster99/torque-shed whose tools/ make the coasts"
         required: false
         default: main
+      what:
+        description: "coast (where the land is) or spans (bridges and tunnels)"
+        required: false
+        default: coast
       only:
         description: "Just this 5 degree block (R_C), or empty for all"
         required: false
@@ -41,15 +45,16 @@ jobs:
       - name: Map the coast of every baked cell, and add it to the index
         env:
           ONLY: ${{ inputs.only }}
+          WHAT: ${{ inputs.what }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for attempt in 1 2 3 4 5; do
             git fetch origin main && git reset --hard origin/main
-            python3 scripts/coast_backfill.py game/tools ${ONLY:+--only "$ONLY"}
+            python3 scripts/coast_backfill.py game/tools --what "${WHAT:-coast}" ${ONLY:+--only "$ONLY"}
             git add index.json sketch
             git diff --cached --quiet && exit 0
-            git commit -m "The coast (run ${GITHUB_RUN_ID})"
+            git commit -m "The ${WHAT:-coast} (run ${GITHUB_RUN_ID})"
             git push origin HEAD:main && exit 0
             sleep $((attempt * 10))
           done
