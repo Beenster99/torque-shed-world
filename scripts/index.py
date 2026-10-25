@@ -12,7 +12,11 @@ block's file, sketch/bR_C.json ({"format": 1, "cells": {"ROW_COL": lines}}), and
 
 A baked cell's rivers and streams (entries/cROW_COL.streams, by the game's tools/stream_bake.py) go into a file of their
 own, stream/cROW_COL.json ({"streams": lines}), and its hash into the index's "streams" ({"ROW_COL": hash}): the game
-fetches a cell's for a journey on it (there are far too many for the sketch's blocks)."""
+fetches a cell's for a journey on it (there are far too many for the sketch's blocks).
+
+A baked cell's trees (entries/cROW_COL.trees, by the game's tools/tree_bake.py: the canopy's height and how thick it is
+near its roads, and the leaves where the map has them) go into a file of their own the same way, tree/cROW_COL.json, its
+hash into the index's "trees"."""
 import glob
 import hashlib
 import json
@@ -39,10 +43,12 @@ def main(argv):
     index["cells"] = dict(sorted(index["cells"].items()))
     sketches = merge_sketches(sorted(glob.glob(os.path.join(argv[1], "**", "*.sketch"), recursive=True)), index)
     streams = merge_streams(sorted(glob.glob(os.path.join(argv[1], "**", "*.streams"), recursive=True)), index)
+    trees = merge_trees(sorted(glob.glob(os.path.join(argv[1], "**", "*.trees"), recursive=True)), index)
     with open(INDEX, "w") as f:
         json.dump(index, f, indent=1, sort_keys=False)
         f.write("\n")
-    print("index: %d added, %d cells; %d sketches, %d cells' streams" % (added, len(index["cells"]), sketches, streams))
+    print("index: %d added, %d cells; %d sketches, %d cells' streams, %d cells' trees"
+          % (added, len(index["cells"]), sketches, streams, trees))
 
 
 def block_of(cell):
@@ -100,6 +106,23 @@ def merge_streams(paths, index, root=ROOT):
         index.setdefault("streams", {})[s["cell"]] = hashlib.sha1(text.encode()).hexdigest()[:12]
     if "streams" in index:
         index["streams"] = dict(sorted(index["streams"].items()))
+    return len(paths)
+
+
+def merge_trees(paths, index, root=ROOT):
+    """Writes the cells' trees at `paths` ({"cell", "rows", "cols", "trees", "leaf"}) to their files under root/tree, as
+    they are, and each one's hash into index["trees"]. Returns how many were written."""
+    for path in paths:
+        with open(path) as f:
+            s = json.load(f)
+        text = json.dumps(s, separators=(",", ":"))
+        out = os.path.join(root, "tree", "c%s.json" % s["cell"])
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        with open(out, "w") as f:
+            f.write(text + "\n")
+        index.setdefault("trees", {})[s["cell"]] = hashlib.sha1(text.encode()).hexdigest()[:12]
+    if "trees" in index:
+        index["trees"] = dict(sorted(index["trees"].items()))
     return len(paths)
 
 
