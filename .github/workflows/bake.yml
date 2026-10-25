@@ -95,6 +95,11 @@ jobs:
             fi
             python3 game/tools/sketch_bake.py "out/$NAME" $COAST --out "entries/${NAME}.sketch"
           fi
+          # Its rivers and streams as lines near its roads, a file of its own (stream/ by the index), left out if they
+          # can't be had.
+          if [ -f game/tools/stream_bake.py ]; then
+            python3 game/tools/stream_bake.py "$LAT" "$LON" --release "$RELEASE" --out "entries/${NAME}.streams" || rm -f "entries/${NAME}.streams"
+          fi
           HASH=$(python3 -c "import json; print(list(json.load(open('entry.json')).values())[0]['hash'])")
           BYTES=$(stat -c %s cell.zip)
           # One release per 5 degree block: c<row>_<col> of a 0.25 degree grid, so a block is 20 rows by 20 columns.
@@ -135,6 +140,7 @@ jobs:
             python3 scripts/index.py entries
             git add index.json
             if [ -d sketch ]; then git add sketch; fi
+            if [ -d stream ]; then git add stream; fi
             git diff --cached --quiet && exit 0
             git commit -m "Index: cells baked by run ${GITHUB_RUN_ID}"
             git push origin HEAD:main && exit 0

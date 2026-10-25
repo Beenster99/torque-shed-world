@@ -8,7 +8,11 @@ one with no roads (the sea, mostly: not baked again). Entries from another relea
 
 A baked cell's main-roads sketch (entries/cROW_COL.sketch, by the game's tools/sketch_bake.py) goes into its 5 degree
 block's file, sketch/bR_C.json ({"format": 1, "cells": {"ROW_COL": lines}}), and the block's hash into the index's
-"sketches" ({"R_C": hash}): the Route planner TV fetches a block's file when it changes."""
+"sketches" ({"R_C": hash}): the Route planner TV fetches a block's file when it changes.
+
+A baked cell's rivers and streams (entries/cROW_COL.streams, by the game's tools/stream_bake.py) go into a file of their
+own, stream/cROW_COL.json ({"streams": lines}), and its hash into the index's "streams" ({"ROW_COL": hash}): the game
+fetches a cell's for a journey on it (there are far too many for the sketch's blocks)."""
 import glob
 import hashlib
 import json
@@ -34,10 +38,11 @@ def main(argv):
         added += 1
     index["cells"] = dict(sorted(index["cells"].items()))
     sketches = merge_sketches(sorted(glob.glob(os.path.join(argv[1], "**", "*.sketch"), recursive=True)), index)
+    streams = merge_streams(sorted(glob.glob(os.path.join(argv[1], "**", "*.streams"), recursive=True)), index)
     with open(INDEX, "w") as f:
         json.dump(index, f, indent=1, sort_keys=False)
         f.write("\n")
-    print("index: %d added, %d cells; %d sketches" % (added, len(index["cells"]), sketches))
+    print("index: %d added, %d cells; %d sketches, %d cells' streams" % (added, len(index["cells"]), sketches, streams))
 
 
 def block_of(cell):
@@ -79,6 +84,23 @@ def merge_sketches(paths, index, root=ROOT):
     if "sketches" in index:
         index["sketches"] = dict(sorted(index["sketches"].items()))
     return sum(len(v) for v in by_block.values())
+
+
+def merge_streams(paths, index, root=ROOT):
+    """Writes the cells' streams at `paths` ({"cell", "streams"}) to their files under root/stream, and each one's hash
+    into index["streams"]. Returns how many were written."""
+    for path in paths:
+        with open(path) as f:
+            s = json.load(f)
+        text = json.dumps({"streams": s["streams"]}, separators=(",", ":"))
+        out = os.path.join(root, "stream", "c%s.json" % s["cell"])
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        with open(out, "w") as f:
+            f.write(text + "\n")
+        index.setdefault("streams", {})[s["cell"]] = hashlib.sha1(text.encode()).hexdigest()[:12]
+    if "streams" in index:
+        index["streams"] = dict(sorted(index["streams"].items()))
+    return len(paths)
 
 
 if __name__ == "__main__":

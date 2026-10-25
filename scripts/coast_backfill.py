@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Makes the coast (the game's tools/coast_bake.py: where the land is, for the Route planner TV close in), or with
 --what spans the bridges and tunnels (tools/span_bake.py), of every baked cell the index has, fetching Overture's data
-once per 1 degree square, and merges them into sketch/ and the index's "sketches" (see index.py). For cells baked
-before these were made; cells baked since get theirs as they are baked.
+once per 1 degree square, and merges them into sketch/ and the index's "sketches" (see index.py); or with --what streams
+the rivers and streams (tools/stream_bake.py), into stream/ and the index's "streams". For cells baked before these
+were made; cells baked since get theirs as they are baked.
 
-    python3 scripts/coast_backfill.py GAME_TOOLS_DIR [--what coast|spans] [--only R_C] [--release RELEASE]"""
+    python3 scripts/coast_backfill.py GAME_TOOLS_DIR [--what coast|spans|streams] [--only R_C] [--release RELEASE]"""
 import argparse
 import json
 import math
@@ -20,7 +21,7 @@ import index as idx  # noqa: E402
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("tools")
-    ap.add_argument("--what", choices=["coast", "spans"], default="coast")
+    ap.add_argument("--what", choices=["coast", "spans", "streams"], default="coast")
     ap.add_argument("--only", help="just this 5 degree block (R_C)")
     ap.add_argument("--release", help="the Overture release (default: the latest)")
     args = ap.parse_args(argv)
@@ -31,6 +32,10 @@ def main(argv=None):
         import span_bake as sp
         fetch = sp.fetch_segments
         make = sp.cell_spans
+    elif args.what == "streams":
+        import stream_bake as st
+        fetch = st.fetch_square
+        make = st.cell_streams_of
     else:
         fetch = cb.fetch_land
         make = cb.cell_coast
@@ -57,7 +62,7 @@ def main(argv=None):
             paths = []
             for row, col in members:
                 got = make(geoms, row, col)
-                path = os.path.join(out, "c%s.sketch" % got["cell"])
+                path = os.path.join(out, "c%s.%s" % (got["cell"], "streams" if args.what == "streams" else "sketch"))
                 with open(path, "w") as f:
                     json.dump(got, f, separators=(",", ":"))
                 paths.append(path)
@@ -65,7 +70,7 @@ def main(argv=None):
             return paths
         with ThreadPoolExecutor(8) as pool:
             paths = [p for ps in pool.map(square, sorted(squares.items())) for p in ps]
-        n = idx.merge_sketches(paths, index)
+        n = idx.merge_streams(paths, index) if args.what == "streams" else idx.merge_sketches(paths, index)
     with open(idx.INDEX, "w") as f:
         json.dump(index, f, indent=1, sort_keys=False)
         f.write("\n")
