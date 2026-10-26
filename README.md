@@ -33,5 +33,5 @@ contributors, Overture Maps Foundation), published under the ODbL; each cell's `
 
 The profiles are made from Natural Earth (public domain); Beck, H.E. et al. (2023) Köppen-Geiger maps (CC BY 4.0); ESA
 WorldCover 2021 (© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA
-WorldCover consortium, CC BY 4.0); CRU TS 4.09 (Climatic Research Unit, University of East Anglia, and Met Office: Open
+WorldCover consortium, CC BY 4.0, for the land cover and the ground's colour); CRU TS 4.09 (Climatic Research Unit, University of East Anglia, and Met Office: Open
 Government Licence); and the terrain tiles the cells use.
