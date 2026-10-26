@@ -80,6 +80,30 @@
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b12_21/c252_438-efa1e709d16580da.zip",
    "tools": "c6f4393"
   },
+  "417_1203": {
+   "hash": "ed1a29d9ce33b715",
+   "bytes": 5288207,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b20_60/c417_1203-ed1a29d9ce33b715.zip",
+   "tools": "21153c8"
+  },
+  "417_1204": {
+   "hash": "20c3af638884d481",
+   "bytes": 3479513,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b20_60/c417_1204-20c3af638884d481.zip",
+   "tools": "21153c8"
+  },
+  "418_1203": {
+   "hash": "1fc956a27faf4bce",
+   "bytes": 2547432,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b20_60/c418_1203-1fc956a27faf4bce.zip",
+   "tools": "21153c8"
+  },
+  "418_1204": {
+   "hash": "388ad4fbfe048df4",
+   "bytes": 7148451,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b20_60/c418_1204-388ad4fbfe048df4.zip",
+   "tools": "21153c8"
+  },
   "464_1230": {
    "hash": "e6ddf931e0888e6f",
    "bytes": 2753082,
@@ -14022,6 +14046,7 @@
  "sketches": {
   "12_21": "f7ac9fb1064a",
   "12_22": "6ee452411500",
+  "20_60": "5055c5372d7f",
   "23_61": "b107a7883f67",
   "24_61": "eea158da087c",
   "24_62": "253b1ce3f80d",
@@ -14059,6 +14084,10 @@
   "252_436": "2cfd0ce4b8d6",
   "252_437": "f575dc30b5ef",
   "252_438": "408143765429",
+  "417_1203": "672877eecd67",
+  "417_1204": "93d7969b7f93",
+  "418_1203": "315efc20691f",
+  "418_1204": "0c32053b2adf",
   "464_1230": "c094e4c7ca13",
   "464_1231": "948112849fc6",
   "465_1230": "6afa2796a7a9",
@@ -15850,6 +15879,10 @@
   "252_436": "efa9caf47838",
   "252_437": "5e3ab722b1b6",
   "252_438": "8487cbd943bf",
+  "417_1203": "068efeb790b8",
+  "417_1204": "66a8fa741b18",
+  "418_1203": "8f049bfdd351",
+  "418_1204": "fedaf2cdc413",
   "464_1230": "0624a7bad5a8",
   "464_1231": "18188c08fd0d",
   "465_1230": "e56f6b27bde5",
