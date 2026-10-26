@@ -23,7 +23,7 @@ on:
         description: "Give each profile its ground's tint (Sentinel-2)"
         type: boolean
         required: false
-        default: false
+        default: true
 
 permissions:
   contents: write
@@ -56,7 +56,7 @@ jobs:
       - name: Make the profiles
         env:
           ONLY: ${{ inputs.only }}
-          TINT: ${{ inputs.tint && '--tint' || '' }}
+          TINT: ${{ (github.event_name == 'workflow_run' || inputs.tint) && '--tint' || '' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
