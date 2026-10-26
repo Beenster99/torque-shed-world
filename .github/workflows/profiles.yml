@@ -1,0 +1,73 @@
+name: Profile the cells
+
+# Makes the place profile of every cell in the index that has none, or whose profile was made from older inputs (the
+# game's tools/profile_bake.py: country and region, climate zone and the months' weather, cover mix, altitude, coast,
+# how built up it is), into profile/cROW_COL.json, and their hashes into the index's "profiles". Runs after each bake,
+# and from the Actions tab. Only the cells whose inputs changed are made again; the global maps it reads are cached.
+
+on:
+  workflow_run:
+    workflows: ["Bake cells"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      tools_ref:
+        description: "Branch, tag or commit of Beenster99/torque-shed whose tools/ make the profiles"
+        required: false
+        default: main
+      only:
+        description: "Just these cells (ROW_COL,ROW_COL,...), or empty for every one that needs it"
+        required: false
+        default: ""
+      tint:
+        description: "Give each profile its ground's tint (Sentinel-2)"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profiles
+  cancel-in-progress: false
+
+jobs:
+  profiles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Beenster99/torque-shed
+          ref: ${{ inputs.tools_ref || 'main' }}
+          path: game
+          sparse-checkout: tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy pillow rasterio shapely
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/torque-shed-profile
+          key: profile-sources-${{ hashFiles('game/tools/profile_bake.py') }}
+          restore-keys: profile-sources-
+      - name: Make the profiles
+        env:
+          ONLY: ${{ inputs.only }}
+          TINT: ${{ inputs.tint && '--tint' || '' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            git fetch origin main && git reset --hard origin/main
+            python3 game/tools/profile_bake.py --index index.json --out . --only "$ONLY" $TINT
+            git add index.json
+            if [ -d profile ]; then git add profile; fi
+            git diff --cached --quiet && exit 0
+            git commit -m "The profiles (run ${GITHUB_RUN_ID})"
+            git push origin HEAD:main && exit 0
+            sleep $((attempt * 5))
+          done
+          exit 1
