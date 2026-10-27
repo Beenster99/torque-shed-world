@@ -10448,6 +10448,24 @@
   "576_727": {
    "empty": true
   },
+  "576_759": {
+   "hash": "14367f2c3b2f1de4",
+   "bytes": 1738694,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b28_37/c576_759-14367f2c3b2f1de4.zip",
+   "tools": "523a43a"
+  },
+  "576_760": {
+   "hash": "33c5bf1d535520b0",
+   "bytes": 1772356,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b28_38/c576_760-33c5bf1d535520b0.zip",
+   "tools": "523a43a"
+  },
+  "576_761": {
+   "hash": "7db7466391bfad21",
+   "bytes": 1284493,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b28_38/c576_761-7db7466391bfad21.zip",
+   "tools": "523a43a"
+  },
   "577_685": {
    "hash": "66d703bf9f161822",
    "bytes": 384247,
@@ -10666,6 +10684,24 @@
   },
   "577_727": {
    "empty": true
+  },
+  "577_759": {
+   "hash": "ed2a746c722c04ee",
+   "bytes": 1463777,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b28_37/c577_759-ed2a746c722c04ee.zip",
+   "tools": "523a43a"
+  },
+  "577_760": {
+   "hash": "3e76616e2496bed2",
+   "bytes": 2246777,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b28_38/c577_760-3e76616e2496bed2.zip",
+   "tools": "523a43a"
+  },
+  "577_761": {
+   "hash": "84493f70aefe116f",
+   "bytes": 1007951,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b28_38/c577_761-84493f70aefe116f.zip",
+   "tools": "523a43a"
   },
   "578_685": {
    "hash": "42cf0b096d187912",
@@ -14106,6 +14142,8 @@
   "28_34": "17f8f5956c41",
   "28_35": "34e0c369aef4",
   "28_36": "5414dd342906",
+  "28_37": "461406eba0dd",
+  "28_38": "ef6ad5443728",
   "29_34": "92408aff0d32",
   "29_35": "a90577f49f8c",
   "30_35": "13496d201c8d",
@@ -15525,6 +15563,9 @@
   "576_717": "4dbf6087b16d",
   "576_718": "2bb235a491ca",
   "576_719": "17b48a825967",
+  "576_759": "472268ffbb76",
+  "576_760": "4e9014b368c3",
+  "576_761": "778343bdb9c5",
   "577_685": "4726643b5e6a",
   "577_686": "d61ebd10fe9e",
   "577_687": "1a22ac6edaf7",
@@ -15555,6 +15596,9 @@
   "577_716": "2d7fcb1a6d7c",
   "577_717": "67273f1baadb",
   "577_718": "0286a304cd0e",
+  "577_759": "d8e831bbbdb9",
+  "577_760": "de9841e325cc",
+  "577_761": "2d698c65e91c",
   "578_685": "74a919ad7f6e",
   "578_686": "368d38420881",
   "578_687": "cec7e186d65f",
@@ -17326,6 +17370,9 @@
   "576_717": "b77d37c5a0d8",
   "576_718": "b92222fd3cd2",
   "576_719": "7421eb344ff0",
+  "576_759": "a21530a4adab",
+  "576_760": "6eca7259360d",
+  "576_761": "41f00eb8654f",
   "577_685": "a375da581fbd",
   "577_686": "b3ba93ae2d16",
   "577_687": "fd5222b39ea1",
@@ -17356,6 +17403,9 @@
   "577_716": "b5eee76052d5",
   "577_717": "af1b49ba33a6",
   "577_718": "4f8ae86bf943",
+  "577_759": "74e3be1f7085",
+  "577_760": "43e917e7d3be",
+  "577_761": "f294809153b6",
   "578_685": "86be1c8c61ea",
   "578_686": "89df05a3f871",
   "578_687": "73591d814bb9",
