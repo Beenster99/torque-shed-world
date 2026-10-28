@@ -170,6 +170,30 @@
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b12_21/c252_438-efa1e709d16580da.zip",
    "tools": "c6f4393"
   },
+  "267_546": {
+   "hash": "21d87c3e5fe8bf6e",
+   "bytes": 895030,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b13_27/c267_546-21d87c3e5fe8bf6e.zip",
+   "tools": "c82594e"
+  },
+  "267_547": {
+   "hash": "effa45a307dd8481",
+   "bytes": 41794,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b13_27/c267_547-effa45a307dd8481.zip",
+   "tools": "c82594e"
+  },
+  "268_546": {
+   "hash": "465f5af3b61be5b6",
+   "bytes": 4800639,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b13_27/c268_546-465f5af3b61be5b6.zip",
+   "tools": "c82594e"
+  },
+  "268_547": {
+   "hash": "04b825ef9c23571e",
+   "bytes": 3359420,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/cells-2026-10-21.0-b13_27/c268_547-04b825ef9c23571e.zip",
+   "tools": "c82594e"
+  },
   "417_1203": {
    "hash": "ed1a29d9ce33b715",
    "bytes": 5288207,
@@ -14310,6 +14334,7 @@
   "11_59": "999180d50eee",
   "12_21": "f7ac9fb1064a",
   "12_22": "6ee452411500",
+  "13_27": "2b7fcf48b7ba",
   "20_60": "5055c5372d7f",
   "21_16": "51cf72a897ee",
   "23_33": "51d12e4bae63",
@@ -14373,6 +14398,10 @@
   "252_436": "2cfd0ce4b8d6",
   "252_437": "f575dc30b5ef",
   "252_438": "408143765429",
+  "267_546": "4281cfcfb4d4",
+  "267_547": "3eefab14b080",
+  "268_546": "aff930a0d4e8",
+  "268_547": "6a2c3b3bae69",
   "417_1203": "672877eecd67",
   "417_1204": "93d7969b7f93",
   "418_1203": "315efc20691f",
@@ -16211,6 +16240,10 @@
   "252_436": "efa9caf47838",
   "252_437": "5e3ab722b1b6",
   "252_438": "8487cbd943bf",
+  "267_546": "43cd6de4fa45",
+  "267_547": "37dedffe53a1",
+  "268_546": "0218eacf2678",
+  "268_547": "b526443d58cc",
   "417_1203": "068efeb790b8",
   "417_1204": "66a8fa741b18",
   "418_1203": "8f049bfdd351",
