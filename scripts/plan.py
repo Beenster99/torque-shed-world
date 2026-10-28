@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Which cells a bake run makes: the cells asked for, less those the index already has for this release.
+"""Which cells a bake run makes: the cells asked for, less those the index already has for this release (unless
+REBAKE is "true": then the cells the index has are baked again, with newer tools, and those it has as empty are left).
 
-    python3 scripts/plan.py "54.3,-1.9 54.25,-2.5,54.5,-1.75" [RELEASE] >> "$GITHUB_OUTPUT"
+    python3 scripts/plan.py "54.3,-1.9 54.25,-2.5,54.5,-1.75" [RELEASE] [REBAKE] >> "$GITHUB_OUTPUT"
 
 Each item is a point (LAT,LON: the cell it is in) or a box (SOUTH,WEST,NORTH,EAST: every cell it touches). Writes
 `cells=<JSON list of [row, column, lat, lon]>` (lat, lon the cell's middle) and `release=<Overture release>`. A run
@@ -36,10 +37,14 @@ def main(argv):
         index = json.load(f)
     release = (argv[2] if len(argv) > 2 and argv[2] else "") or index["release"]
     have = index["cells"] if release == index["release"] else {}
+    rebake = len(argv) > 3 and argv[3] == "true"
     want = []
     for item in argv[1].split():
         for c in cells_of(item):
-            if "%d_%d" % c not in have and c not in want:
+            key = "%d_%d" % c
+            if c in want:
+                continue
+            if (rebake and key in have and not have[key].get("empty")) or (not rebake and key not in have):
                 want.append(c)
     if len(want) > MAX:
         print("asked for %d cells: baking the first %d" % (len(want), MAX), file=sys.stderr)
