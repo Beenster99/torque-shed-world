@@ -3,7 +3,8 @@ name: Bake cells
 # Bakes cells of the world for Torque Shed (each a 0.25 degree square of its roads, buildings, places and land cover:
 # tools/region_bake.py --cell in Beenster99/torque-shed) and publishes them as release assets, one release per 5 degree
 # block, then adds them to index.json, which the game reads. Run it from the Actions tab (or the API) with the cells to
-# bake; cells the index already has for the release are skipped.
+# bake; cells the index already has for the release are skipped, unless "rebake" is ticked (after a fix to the tools:
+# they're baked again and their index entries replaced).
 
 on:
   workflow_dispatch:
@@ -19,6 +20,11 @@ on:
         description: "Branch, tag or commit of Beenster99/torque-shed whose tools/ bake them"
         required: false
         default: main
+      rebake:
+        description: "Bake again the cells the index already has (after a fix to the tools); empty ones stay empty"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -35,7 +41,8 @@ jobs:
         env:
           CELLS: ${{ inputs.cells }}
           RELEASE: ${{ inputs.release }}
-        run: python3 scripts/plan.py "$CELLS" "$RELEASE" | tee -a "$GITHUB_OUTPUT"
+          REBAKE: ${{ inputs.rebake }}
+        run: python3 scripts/plan.py "$CELLS" "$RELEASE" "$REBAKE" | tee -a "$GITHUB_OUTPUT"
 
   bake:
     needs: plan
