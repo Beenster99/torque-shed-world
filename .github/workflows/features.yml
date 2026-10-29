@@ -1,0 +1,105 @@
+name: Map the features
+
+# Makes the features (the game's tools/feature_bake.py: the things worth stopping for, from wind turbines and viaducts
+# to dams, peaks and dry-stone walls) of every cell the index has baked, a 5 degree block a job, and puts them in
+# feature/ and the index. Only the cells with none, or made from another Overture release or another list of classes,
+# are made again, so after the game's baker gains a kind this is one incremental pass. Run it from the Actions tab.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tools_ref:
+        description: "Branch, tag or commit of Beenster99/torque-shed whose tools/ make the features"
+        required: false
+        default: main
+      only:
+        description: "Just these 5 degree blocks (R_C,R_C,...), or empty for all"
+        required: false
+        default: ""
+      all:
+        description: "Make every cell's again, whatever it was made from"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      blocks: ${{ steps.blocks.outputs.blocks }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: blocks
+        env:
+          ONLY: ${{ inputs.only }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, sys
+          sys.path.insert(0, "scripts")
+          import index as idx
+          cells = json.load(open(idx.INDEX))["cells"]
+          blocks = sorted({idx.block_of(c) for c, e in cells.items() if not e.get("empty")})
+          only = [b for b in os.environ.get("ONLY", "").split(",") if b]
+          print("blocks=" + json.dumps([b for b in blocks if not only or b in only]))
+          PY
+
+  features:
+    needs: plan
+    if: needs.plan.outputs.blocks != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        block: ${{ fromJson(needs.plan.outputs.blocks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Beenster99/torque-shed
+          ref: ${{ inputs.tools_ref }}
+          path: game
+          sparse-checkout: tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy pillow pyarrow
+      - name: Map the features of the block's cells
+        run: python3 scripts/feature_backfill.py game/tools --only "${{ matrix.block }}" --out entries ${{ inputs.all && '--all' || '' }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: features-${{ matrix.block }}
+          path: entries/
+          retention-days: 3
+          if-no-files-found: ignore
+
+  index:
+    needs: [plan, features]
+    if: always() && needs.plan.outputs.blocks != '[]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: features-*
+          path: entries
+      - name: Add the features to the index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p entries
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            git fetch origin main && git reset --hard origin/main
+            python3 scripts/index.py entries
+            git add index.json
+            if [ -d feature ]; then git add feature; fi
+            git diff --cached --quiet && exit 0
+            git commit -m "The features (run ${GITHUB_RUN_ID})"
+            git push origin HEAD:main && exit 0
+            sleep $((attempt * 5))
+          done
+          exit 1

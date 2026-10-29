@@ -113,6 +113,11 @@ jobs:
             python3 game/tools/tree_bake.py "$LAT" "$LON" --release "$RELEASE" --cache "$RUNNER_TEMP/canopy" --out "entries/${NAME}.trees" || rm -f "entries/${NAME}.trees"
             rm -rf "$RUNNER_TEMP/canopy"
           fi
+          # Its features (the things worth stopping for: turbines, viaducts, dams, peaks, walls), a file of its own
+          # (feature/ by the index), left out if they can't be had.
+          if [ -f game/tools/feature_bake.py ]; then
+            python3 game/tools/feature_bake.py "$LAT" "$LON" --release "$RELEASE" --out "entries/${NAME}.features" || rm -f "entries/${NAME}.features"
+          fi
           HASH=$(python3 -c "import json; print(list(json.load(open('entry.json')).values())[0]['hash'])")
           BYTES=$(stat -c %s cell.zip)
           # One release per 5 degree block: c<row>_<col> of a 0.25 degree grid, so a block is 20 rows by 20 columns.
@@ -155,6 +160,7 @@ jobs:
             if [ -d sketch ]; then git add sketch; fi
             if [ -d stream ]; then git add stream; fi
             if [ -d tree ]; then git add tree; fi
+            if [ -d feature ]; then git add feature; fi
             git diff --cached --quiet && exit 0
             git commit -m "Index: cells baked by run ${GITHUB_RUN_ID}"
             git push origin HEAD:main && exit 0
