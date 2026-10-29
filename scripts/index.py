@@ -16,7 +16,11 @@ fetches a cell's for a journey on it (there are far too many for the sketch's bl
 
 A baked cell's trees (entries/cROW_COL.trees, by the game's tools/tree_bake.py: the canopy's height and how thick it is
 near its roads, and the leaves where the map has them) go into a file of their own the same way, tree/cROW_COL.json, its
-hash into the index's "trees"."""
+hash into the index's "trees".
+
+A baked cell's features (entries/cROW_COL.features, by the game's tools/feature_bake.py: the things worth stopping for,
+wind turbines to waterfalls) go into a file of their own the same way, feature/cROW_COL.json, its hash into the index's
+"features"."""
 import glob
 import hashlib
 import json
@@ -44,11 +48,12 @@ def main(argv):
     sketches = merge_sketches(sorted(glob.glob(os.path.join(argv[1], "**", "*.sketch"), recursive=True)), index)
     streams = merge_streams(sorted(glob.glob(os.path.join(argv[1], "**", "*.streams"), recursive=True)), index)
     trees = merge_trees(sorted(glob.glob(os.path.join(argv[1], "**", "*.trees"), recursive=True)), index)
+    features = merge_features(sorted(glob.glob(os.path.join(argv[1], "**", "*.features"), recursive=True)), index)
     with open(INDEX, "w") as f:
         json.dump(index, f, indent=1, sort_keys=False)
         f.write("\n")
-    print("index: %d added, %d cells; %d sketches, %d cells' streams, %d cells' trees"
-          % (added, len(index["cells"]), sketches, streams, trees))
+    print("index: %d added, %d cells; %d sketches, %d cells' streams, %d cells' trees, %d cells' features"
+          % (added, len(index["cells"]), sketches, streams, trees, features))
 
 
 def block_of(cell):
@@ -124,6 +129,28 @@ def merge_trees(paths, index, root=ROOT):
     if "trees" in index:
         index["trees"] = dict(sorted(index["trees"].items()))
     return len(paths)
+
+
+def merge_features(paths, index, root=ROOT):
+    """Writes the cells' features at `paths` (feature_bake.py's {"format", "cell", "release", "classes", ...}) to their
+    files under root/feature, as they are, and each one's hash into index["features"]. A file from another release than
+    the index's is left out. Returns how many were written."""
+    n = 0
+    for path in paths:
+        with open(path, encoding="utf-8") as f:
+            s = json.load(f)
+        if s.get("release") != index.get("release"):
+            continue
+        text = json.dumps(s, separators=(",", ":"), ensure_ascii=False)
+        out = os.path.join(root, "feature", "c%s.json" % s["cell"])
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        with open(out, "w", encoding="utf-8") as f:
+            f.write(text + "\n")
+        index.setdefault("features", {})[s["cell"]] = hashlib.sha1(text.encode()).hexdigest()[:12]
+        n += 1
+    if "features" in index:
+        index["features"] = dict(sorted(index["features"].items()))
+    return n
 
 
 if __name__ == "__main__":

@@ -20,6 +20,12 @@ stitches them together; the land's heights come from [Mapterhorn](https://mapter
   Made by the game's `tools/profile_bake.py` (see `docs/place_profile.md` there); `.github/workflows/profiles.yml`
   (**Profile the cells**) makes them after every bake, only for cells whose inputs changed.
 
+- `feature/cROW_COLUMN.json`: each cell's **features**, the things worth stopping for (wind turbines, pylons, towers
+  and lifts, railways and viaducts, dams, falls and harbours, peaks and cliffs, vineyards and quarries, walls and gates,
+  borders and runways), from the Overture themes the cells don't hold, its hash in the index's `"features"`. Made by the
+  game's `tools/feature_bake.py` as each cell is baked; `.github/workflows/features.yml` (**Map the features**) makes them
+  for cells baked before, and again only for cells whose Overture release or the baker's list of classes changed.
+
 - `worker/`: the **survey** worker (Cloudflare, free plan) the game asks to bake cells nobody has baked yet, when a
   crew presses Survey on the Route planner TV. See `worker/README.md` for setting it up.
 
