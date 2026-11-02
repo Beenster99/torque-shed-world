@@ -141,12 +141,59 @@ jobs:
     needs: [plan, bake]
     if: always() && needs.plan.outputs.cells != '[]'
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           pattern: entry-*
           path: entries
+      # The new cells' place profiles are made here, before the cells go in the index, so the index never names a cell
+      # without its profile: a game that read it in between guessed the profile, built different roads from its mates,
+      # and couldn't ride with them. Made with the same tools and options as profiles.yml (main, with the tint), so
+      # that run, which still follows this one, keeps them as they are. If they can't be made the cells are indexed
+      # anyway and profiles.yml makes them, as before (the game waits for them meanwhile).
+      - uses: actions/checkout@v4
+        with:
+          repository: Beenster99/torque-shed
+          ref: main
+          path: game
+          sparse-checkout: tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy pillow rasterio shapely
+      - uses: actions/cache/restore@v4
+        with:
+          path: ~/.cache/torque-shed-profile
+          key: profile-sources-${{ hashFiles('game/tools/profile_bake.py') }}
+          restore-keys: profile-sources-
+      - name: Make the new cells' profiles
+        id: profiles
+        continue-on-error: true
+        run: |
+          mkdir -p "$RUNNER_TEMP/world"
+          cp index.json "$RUNNER_TEMP/world/index.json"
+          # (the new cells into a copy of the index, for the baker to find them)
+          python3 - "$RUNNER_TEMP/world/index.json" entries <<'PY'
+          import json, os, sys
+          sys.path.insert(0, "scripts")
+          path, entries = sys.argv[1], sys.argv[2]
+          index = json.load(open(path))
+          names = []
+          for root, _, files in os.walk(entries):
+              for name in files:
+                  if name.endswith(".json"):
+                      e = json.load(open(os.path.join(root, name)))
+                      if "cell" in e:
+                          index["cells"][e["cell"]] = e
+                          names.append(e["cell"])
+          json.dump(index, open(path, "w"))
+          open(os.path.join(os.path.dirname(path), "only.txt"), "w").write(",".join(sorted(set(names))))
+          PY
+          ONLY=$(cat "$RUNNER_TEMP/world/only.txt")
+          if [ -z "$ONLY" ]; then exit 0; fi
+          python3 game/tools/profile_bake.py --index "$RUNNER_TEMP/world/index.json" --out "$RUNNER_TEMP/world" --only "$ONLY" --tint
       # No concurrency group: a group keeps only one job waiting and cancels the one before, which lost two runs'
       # cells when eight ran at once. Runs that push at the same moment fetch, merge their entries and try again.
       - name: Add the cells to the index
@@ -156,6 +203,24 @@ jobs:
           for attempt in 1 2 3 4 5 6 7 8 9 10; do
             git fetch origin main && git reset --hard origin/main
             python3 scripts/index.py entries
+            # The new cells' profiles (made above), into the index with them.
+            if [ "${{ steps.profiles.outcome }}" = "success" ] && [ -d "$RUNNER_TEMP/world/profile" ]; then
+              mkdir -p profile
+              cp "$RUNNER_TEMP/world"/profile/*.json profile/
+              python3 - "$RUNNER_TEMP/world/index.json" <<'PY'
+          import json, sys
+          made = json.load(open(sys.argv[1])).get("profiles", {})
+          index = json.load(open("index.json"))
+          profiles = index.setdefault("profiles", {})
+          only = open(sys.argv[1].replace("index.json", "only.txt")).read().split(",")
+          profiles.update({c: made[c] for c in only if c in made})
+          index["profiles"] = dict(sorted(profiles.items()))
+          with open("index.json", "w") as f:
+              json.dump(index, f, indent=1, sort_keys=False)
+              f.write("\n")
+          PY
+              git add profile
+            fi
             git add index.json
             if [ -d sketch ]; then git add sketch; fi
             if [ -d stream ]; then git add stream; fi
