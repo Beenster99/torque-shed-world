@@ -69,7 +69,8 @@ jobs:
           python-version: "3.12"
       - run: pip install numpy pillow pyarrow
       - name: Map the features of the block's cells
-        run: python3 scripts/feature_backfill.py game/tools --only "${{ matrix.block }}" --out entries ${{ inputs.all && '--all' || '' }}
+        # (one 1 degree square at a time: a city's square takes about 6.5 GB to read, and the runner has 16)
+        run: python3 scripts/feature_backfill.py game/tools --only "${{ matrix.block }}" --out entries --threads 1 ${{ inputs.all && '--all' || '' }}
       - uses: actions/upload-artifact@v4
         with:
           name: features-${{ matrix.block }}
