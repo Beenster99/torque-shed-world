@@ -29,33 +29,42 @@ jobs:
   plan:
     runs-on: ubuntu-latest
     outputs:
-      blocks: ${{ steps.blocks.outputs.blocks }}
+      jobs: ${{ steps.jobs.outputs.jobs }}
     steps:
       - uses: actions/checkout@v4
-      - id: blocks
+      - uses: actions/checkout@v4
+        with:
+          repository: Beenster99/torque-shed
+          ref: ${{ inputs.tools_ref }}
+          path: game
+          sparse-checkout: tools
+      - run: pip install numpy pillow
+      - id: jobs
         env:
           ONLY: ${{ inputs.only }}
+          ALL: ${{ inputs.all }}
         run: |
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
           import json, os, sys
           sys.path.insert(0, "scripts")
-          import index as idx
-          cells = json.load(open(idx.INDEX))["cells"]
-          blocks = sorted({idx.block_of(c) for c, e in cells.items() if not e.get("empty")})
+          sys.path.insert(0, "game/tools")
+          import building_backfill as bf
+          import building_bake as bb
+          index = json.load(open("index.json"))
           only = [b for b in os.environ.get("ONLY", "").split(",") if b]
-          print("blocks=" + json.dumps([b for b in blocks if not only or b in only]))
+          print("jobs=" + json.dumps(bf.jobs(index, bb.classes_hash(), only, os.environ.get("ALL") == "true")))
           PY
 
   buildings:
     needs: plan
-    if: needs.plan.outputs.blocks != '[]'
+    if: needs.plan.outputs.jobs != '[]'
     runs-on: ubuntu-latest
     timeout-minutes: 340
     strategy:
       fail-fast: false
-      max-parallel: 10
+      max-parallel: 20
       matrix:
-        block: ${{ fromJson(needs.plan.outputs.blocks) }}
+        job: ${{ fromJson(needs.plan.outputs.jobs) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
@@ -68,8 +77,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install numpy pillow pyarrow
-      - name: Map the buildings of the block's cells
-        run: python3 scripts/building_backfill.py game/tools --only "${{ matrix.block }}" --out out --repo "$GITHUB_REPOSITORY" ${{ inputs.all && '--all' || '' }}
+      - name: Map the buildings of the block's share of cells
+        env:
+          JOB: ${{ matrix.job }}
+        run: python3 scripts/building_backfill.py game/tools --only "${JOB%%:*}" --shard "${JOB#*:}" --out out --repo "$GITHUB_REPOSITORY" ${{ inputs.all && '--all' || '' }}
       - name: Put the zips up as release assets
         env:
           GH_TOKEN: ${{ github.token }}
@@ -77,10 +88,12 @@ jobs:
           shopt -s nullglob
           zips=(out/*.bld.zip)
           [ ${#zips[@]} -eq 0 ] && exit 0
-          TAG=$(python3 -c "import json,sys; sys.path.insert(0,'scripts'); import building_backfill as b; print(b.tag_of(json.load(open('index.json'))['release'], '${{ matrix.block }}'))")
+          JOB="${{ matrix.job }}"
+          BLOCK="${JOB%%:*}"
+          TAG=$(python3 -c "import json,sys; sys.path.insert(0,'scripts'); import building_backfill as b; print(b.tag_of(json.load(open('index.json'))['release'], sys.argv[1]))" "$BLOCK")
           gh release view "$TAG" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1 || \
             gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" \
-              --notes "Torque Shed buildings (every building's outline and height) of the cells of 5 degree block ${{ matrix.block }}." || true
+              --notes "Torque Shed buildings (every building's outline and height) of the cells of 5 degree block $BLOCK." || true
           for z in "${zips[@]}"; do
             up=0
             for attempt in 1 2 3 4; do
@@ -92,14 +105,14 @@ jobs:
           mkdir -p entries && cp out/*.bld entries/
       - uses: actions/upload-artifact@v4
         with:
-          name: buildings-${{ matrix.block }}
+          name: buildings-${{ strategy.job-index }}
           path: entries/
           retention-days: 3
           if-no-files-found: ignore
 
   index:
     needs: [plan, buildings]
-    if: always() && needs.plan.outputs.blocks != '[]'
+    if: always() && needs.plan.outputs.jobs != '[]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

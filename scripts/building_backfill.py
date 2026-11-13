@@ -7,7 +7,7 @@ Only the cells with none, or made from another Overture release or other rules (
 made again.
 
     python3 scripts/building_backfill.py GAME_TOOLS_DIR --only R_C --out DIR --repo OWNER/NAME [--release RELEASE]
-        [--threads N] [--all]"""
+        [--threads N] [--all] [--shard K/N]"""
 import argparse
 import hashlib
 import io
@@ -23,6 +23,25 @@ import index as idx  # noqa: E402
 
 def tag_of(release, block):
     return "bld-%s-b%s" % (release, block)
+
+
+CELLS_A_JOB = 40   # (about 3 minutes a cell, four at a time: half an hour a job)
+
+
+def jobs(index, classes, only=(), every=False):
+    """The workflow's jobs: "R_C:K/N" for each block's share of the cells it must make, CELLS_A_JOB a job."""
+    release = index["release"]
+    count = {}
+    for c, e in index["cells"].items():
+        if not e.get("empty") and (every or wanted(index, c, release, classes)):
+            b = idx.block_of(c)
+            if not only or b in only:
+                count[b] = count.get(b, 0) + 1
+    out = []
+    for b in sorted(count):
+        n = max(1, -(-count[b] // CELLS_A_JOB))
+        out += ["%s:%d/%d" % (b, k, n) for k in range(n)]
+    return out
 
 
 def wanted(index, cell, release, classes):
@@ -56,8 +75,9 @@ def main(argv=None):
     ap.add_argument("--out", required=True)
     ap.add_argument("--repo", required=True, help="where the release assets go (OWNER/NAME)")
     ap.add_argument("--release", help="the Overture release (default: the index's)")
-    ap.add_argument("--threads", type=int, default=3)
+    ap.add_argument("--threads", type=int, default=4)
     ap.add_argument("--all", action="store_true", help="make every cell's again, whatever it was made from")
+    ap.add_argument("--shard", default="0/1", help="K/N: only every Nth of the block's cells, from the Kth")
     args = ap.parse_args(argv)
     sys.path.insert(0, args.tools)
     import building_bake as bb
@@ -68,6 +88,8 @@ def main(argv=None):
     classes = bb.classes_hash()
     cells = sorted(c for c, e in index["cells"].items() if not e.get("empty") and idx.block_of(c) == args.only
                    and (args.all or wanted(index, c, release, classes)))
+    k, n = (int(v) for v in args.shard.split("/"))
+    cells = cells[k::n]
     os.makedirs(args.out, exist_ok=True)
     tag = tag_of(release, args.only)
 
