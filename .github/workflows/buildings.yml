@@ -16,6 +16,10 @@ on:
         description: "Just these 5 degree blocks (R_C,R_C,...), or empty for all"
         required: false
         default: ""
+      threads:
+        description: "Cells made at once in a job (fewer for the densest cities: a runner has 16 GB)"
+        required: false
+        default: "4"
       all:
         description: "Make every cell's again, whatever it was made from"
         type: boolean
@@ -80,7 +84,7 @@ jobs:
       - name: Map the buildings of the block's share of cells
         env:
           JOB: ${{ matrix.job }}
-        run: python3 scripts/building_backfill.py game/tools --only "${JOB%%:*}" --shard "${JOB#*:}" --out out --repo "$GITHUB_REPOSITORY" ${{ inputs.all && '--all' || '' }}
+        run: python3 scripts/building_backfill.py game/tools --only "${JOB%%:*}" --shard "${JOB#*:}" --out out --repo "$GITHUB_REPOSITORY" --threads "${{ inputs.threads || '4' }}" ${{ inputs.all && '--all' || '' }}
       - name: Put the zips up as release assets
         env:
           GH_TOKEN: ${{ github.token }}
