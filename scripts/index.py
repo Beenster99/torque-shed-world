@@ -20,7 +20,12 @@ hash into the index's "trees".
 
 A baked cell's features (entries/cROW_COL.features, by the game's tools/feature_bake.py: the things worth stopping for,
 wind turbines to waterfalls) go into a file of their own the same way, feature/cROW_COL.json, its hash into the index's
-"features"."""
+"features".
+
+A baked cell's ground and paths (entries/cROW_COL.ground and .paths, by the game's tools/ground_bake.py and
+paths_bake.py: water, land cover, land use, trees and car parks; the footpaths, bridleways and cycleways beside its roads)
+go into files of their own the same way, ground/cROW_COL.json and paths/cROW_COL.json, their hashes into the index's
+"grounds" and "paths"."""
 import glob
 import hashlib
 import json
@@ -49,11 +54,13 @@ def main(argv):
     streams = merge_streams(sorted(glob.glob(os.path.join(argv[1], "**", "*.streams"), recursive=True)), index)
     trees = merge_trees(sorted(glob.glob(os.path.join(argv[1], "**", "*.trees"), recursive=True)), index)
     features = merge_features(sorted(glob.glob(os.path.join(argv[1], "**", "*.features"), recursive=True)), index)
+    grounds = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.ground"), recursive=True)), index, "ground", "grounds")
+    paths = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.paths"), recursive=True)), index, "paths", "paths")
     with open(INDEX, "w") as f:
         json.dump(index, f, indent=1, sort_keys=False)
         f.write("\n")
-    print("index: %d added, %d cells; %d sketches, %d cells' streams, %d cells' trees, %d cells' features"
-          % (added, len(index["cells"]), sketches, streams, trees, features))
+    print("index: %d added, %d cells; %d sketches, %d cells' streams, %d cells' trees, %d cells' features, %d cells' ground,"
+          " %d cells' paths" % (added, len(index["cells"]), sketches, streams, trees, features, grounds, paths))
 
 
 def block_of(cell):
@@ -150,6 +157,27 @@ def merge_features(paths, index, root=ROOT):
         n += 1
     if "features" in index:
         index["features"] = dict(sorted(index["features"].items()))
+    return n
+
+
+def merge_files(paths, index, folder, key, root=ROOT):
+    """As merge_features, for any per-cell file: each one at `paths` to root/folder/cROW_COL.json, its hash into
+    index[key]. Returns how many were written."""
+    n = 0
+    for path in paths:
+        with open(path, encoding="utf-8") as f:
+            s = json.load(f)
+        if s.get("release") != index.get("release"):
+            continue
+        text = json.dumps(s, separators=(",", ":"), ensure_ascii=False)
+        out = os.path.join(root, folder, "c%s.json" % s["cell"])
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        with open(out, "w", encoding="utf-8") as f:
+            f.write(text + "\n")
+        index.setdefault(key, {})[s["cell"]] = hashlib.sha1(text.encode()).hexdigest()[:12]
+        n += 1
+    if key in index:
+        index[key] = dict(sorted(index[key].items()))
     return n
 
 
