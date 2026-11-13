@@ -67,7 +67,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install numpy pyarrow
+      - run: pip install numpy pillow pyarrow
       - name: Map the buildings of the block's cells
         run: python3 scripts/building_backfill.py game/tools --only "${{ matrix.block }}" --out out --repo "$GITHUB_REPOSITORY" ${{ inputs.all && '--all' || '' }}
       - name: Put the zips up as release assets
