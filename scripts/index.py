@@ -25,7 +25,11 @@ wind turbines to waterfalls) go into a file of their own the same way, feature/c
 A baked cell's ground and paths (entries/cROW_COL.ground and .paths, by the game's tools/ground_bake.py and
 paths_bake.py: water, land cover, land use, trees and car parks; the footpaths, bridleways and cycleways beside its roads)
 go into files of their own the same way, ground/cROW_COL.json and paths/cROW_COL.json, their hashes into the index's
-"grounds" and "paths"."""
+"grounds" and "paths".
+
+A baked cell's buildings (entries/cROW_COL.bld, by scripts/building_backfill.py with the game's tools/building_bake.py:
+every building's outline and height) are a release asset each, too big for git: the entry (its hash, size and download)
+goes into the index's "buildings" ({"ROW_COL": entry})."""
 import glob
 import hashlib
 import json
@@ -56,11 +60,13 @@ def main(argv):
     features = merge_features(sorted(glob.glob(os.path.join(argv[1], "**", "*.features"), recursive=True)), index)
     grounds = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.ground"), recursive=True)), index, "ground", "grounds")
     paths = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.paths"), recursive=True)), index, "paths", "paths")
+    buildings = merge_buildings(sorted(glob.glob(os.path.join(argv[1], "**", "*.bld"), recursive=True)), index)
     with open(INDEX, "w") as f:
         json.dump(index, f, indent=1, sort_keys=False)
         f.write("\n")
     print("index: %d added, %d cells; %d sketches, %d cells' streams, %d cells' trees, %d cells' features, %d cells' ground,"
-          " %d cells' paths" % (added, len(index["cells"]), sketches, streams, trees, features, grounds, paths))
+          " %d cells' paths, %d cells' buildings" % (added, len(index["cells"]), sketches, streams, trees, features, grounds, paths,
+                                                    buildings))
 
 
 def block_of(cell):
@@ -178,6 +184,23 @@ def merge_files(paths, index, folder, key, root=ROOT):
         n += 1
     if key in index:
         index[key] = dict(sorted(index[key].items()))
+    return n
+
+
+def merge_buildings(paths, index):
+    """A baked cell's buildings (entries/cROW_COL.bld, by scripts/building_backfill.py: {cell, release, classes, hash,
+    bytes, buildings, url}, its zip a release asset) into the index's "buildings" as they are, cell first. Returns how
+    many."""
+    n = 0
+    for path in paths:
+        with open(path, encoding="utf-8") as f:
+            e = json.load(f)
+        if e.get("release") != index.get("release"):
+            continue
+        index.setdefault("buildings", {})[e.pop("cell")] = e
+        n += 1
+    if "buildings" in index:
+        index["buildings"] = dict(sorted(index["buildings"].items()))
     return n
 
 

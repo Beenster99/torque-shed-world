@@ -1,0 +1,123 @@
+name: Map the buildings
+
+# Makes the buildings (the game's tools/building_bake.py: every building in a cell with its true outline and height,
+# towns stage 3) of every cell the index has baked, a 5 degree block a job. Each cell's file is zipped and put up as a
+# release asset of bld-RELEASE-bR_C (too big for git), and its entry goes into the index's "buildings". Only the cells
+# with none, or made from another Overture release or other rules, are made again. Run it from the Actions tab.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tools_ref:
+        description: "Branch, tag or commit of Beenster99/torque-shed whose tools/ make the buildings"
+        required: false
+        default: main
+      only:
+        description: "Just these 5 degree blocks (R_C,R_C,...), or empty for all"
+        required: false
+        default: ""
+      all:
+        description: "Make every cell's again, whatever it was made from"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      blocks: ${{ steps.blocks.outputs.blocks }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: blocks
+        env:
+          ONLY: ${{ inputs.only }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, sys
+          sys.path.insert(0, "scripts")
+          import index as idx
+          cells = json.load(open(idx.INDEX))["cells"]
+          blocks = sorted({idx.block_of(c) for c, e in cells.items() if not e.get("empty")})
+          only = [b for b in os.environ.get("ONLY", "").split(",") if b]
+          print("blocks=" + json.dumps([b for b in blocks if not only or b in only]))
+          PY
+
+  buildings:
+    needs: plan
+    if: needs.plan.outputs.blocks != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        block: ${{ fromJson(needs.plan.outputs.blocks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Beenster99/torque-shed
+          ref: ${{ inputs.tools_ref }}
+          path: game
+          sparse-checkout: tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy pyarrow
+      - name: Map the buildings of the block's cells
+        run: python3 scripts/building_backfill.py game/tools --only "${{ matrix.block }}" --out out --repo "$GITHUB_REPOSITORY" ${{ inputs.all && '--all' || '' }}
+      - name: Put the zips up as release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          shopt -s nullglob
+          zips=(out/*.bld.zip)
+          [ ${#zips[@]} -eq 0 ] && exit 0
+          TAG=$(python3 -c "import json,sys; sys.path.insert(0,'scripts'); import building_backfill as b; print(b.tag_of(json.load(open('index.json'))['release'], '${{ matrix.block }}'))")
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1 || \
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" \
+              --notes "Torque Shed buildings (every building's outline and height) of the cells of 5 degree block ${{ matrix.block }}." || true
+          for z in "${zips[@]}"; do
+            up=0
+            for attempt in 1 2 3 4; do
+              if gh release upload "$TAG" "$z" --repo "$GITHUB_REPOSITORY" --clobber; then up=1; break; fi
+              sleep $((attempt * 5))
+            done
+            [ "$up" = 1 ] || { echo "couldn't put up $z"; exit 1; }
+          done
+          mkdir -p entries && cp out/*.bld entries/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: buildings-${{ matrix.block }}
+          path: entries/
+          retention-days: 3
+          if-no-files-found: ignore
+
+  index:
+    needs: [plan, buildings]
+    if: always() && needs.plan.outputs.blocks != '[]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: buildings-*
+          path: entries
+      - name: Add the buildings to the index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            git fetch origin main && git reset --hard origin/main
+            mkdir -p entries && python3 scripts/index.py entries
+            git add index.json
+            git diff --cached --quiet && exit 0
+            git commit -m "The buildings (run ${GITHUB_RUN_ID})"
+            git push origin HEAD:main && exit 0
+            sleep $((attempt * 5))
+          done
+          exit 1
