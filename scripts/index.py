@@ -29,7 +29,11 @@ go into files of their own the same way, ground/cROW_COL.json and paths/cROW_COL
 
 A baked cell's buildings (entries/cROW_COL.bld, by scripts/building_backfill.py with the game's tools/building_bake.py:
 every building's outline and height) are a release asset each, too big for git: the entry (its hash, size and download)
-goes into the index's "buildings" ({"ROW_COL": entry})."""
+goes into the index's "buildings" ({"ROW_COL": entry}).
+
+A baked cell's road itself (entries/cROW_COL.roadx, by scripts/roadx_backfill.py with the game's tools/roadx_bake.py:
+lanes, roundabouts, lights, crossings, humps and barriers from OpenStreetMap) goes into roadx/cROW_COL.json, its hash
+into the index's "roadx"."""
 import glob
 import hashlib
 import json
@@ -60,13 +64,14 @@ def main(argv):
     features = merge_features(sorted(glob.glob(os.path.join(argv[1], "**", "*.features"), recursive=True)), index)
     grounds = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.ground"), recursive=True)), index, "ground", "grounds")
     paths = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.paths"), recursive=True)), index, "paths", "paths")
+    roadx = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.roadx"), recursive=True)), index, "roadx", "roadx")
     buildings = merge_buildings(sorted(glob.glob(os.path.join(argv[1], "**", "*.bld"), recursive=True)), index)
     with open(INDEX, "w") as f:
         json.dump(index, f, indent=1, sort_keys=False)
         f.write("\n")
     print("index: %d added, %d cells; %d sketches, %d cells' streams, %d cells' trees, %d cells' features, %d cells' ground,"
-          " %d cells' paths, %d cells' buildings" % (added, len(index["cells"]), sketches, streams, trees, features, grounds, paths,
-                                                    buildings))
+          " %d cells' paths, %d cells' roadx, %d cells' buildings" % (added, len(index["cells"]), sketches, streams, trees, features,
+                                                                      grounds, paths, roadx, buildings))
 
 
 def block_of(cell):
