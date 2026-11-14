@@ -33,7 +33,8 @@ goes into the index's "buildings" ({"ROW_COL": entry}).
 
 A baked cell's road itself (entries/cROW_COL.roadx, by scripts/roadx_backfill.py with the game's tools/roadx_bake.py:
 lanes, roundabouts, lights, crossings, humps and barriers from OpenStreetMap) goes into roadx/cROW_COL.json, its hash
-into the index's "roadx"."""
+into the index's "roadx". Its places worth riding to (entries/cROW_COL.places, tools/places_bake.py) go into places/ and
+the index's "places" the same way."""
 import glob
 import hashlib
 import json
@@ -65,13 +66,14 @@ def main(argv):
     grounds = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.ground"), recursive=True)), index, "ground", "grounds")
     paths = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.paths"), recursive=True)), index, "paths", "paths")
     roadx = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.roadx"), recursive=True)), index, "roadx", "roadx")
+    places = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.places"), recursive=True)), index, "places", "places")
     buildings = merge_buildings(sorted(glob.glob(os.path.join(argv[1], "**", "*.bld"), recursive=True)), index)
     with open(INDEX, "w") as f:
         json.dump(index, f, indent=1, sort_keys=False)
         f.write("\n")
     print("index: %d added, %d cells; %d sketches, %d cells' streams, %d cells' trees, %d cells' features, %d cells' ground,"
-          " %d cells' paths, %d cells' roadx, %d cells' buildings" % (added, len(index["cells"]), sketches, streams, trees, features,
-                                                                      grounds, paths, roadx, buildings))
+          " %d cells' paths, %d cells' roadx, %d cells' places, %d cells' buildings" % (added, len(index["cells"]), sketches, streams, trees,
+                                                                                       features, grounds, paths, roadx, places, buildings))
 
 
 def block_of(cell):
