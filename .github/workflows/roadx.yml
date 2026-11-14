@@ -4,7 +4,7 @@ name: Map from the OpenStreetMap extract
 # humps, passing places and crash barriers, from OpenStreetMap, joined to the cells' Overture roads) of the baked cells
 # of the chosen 5 degree blocks, and puts them in roadx/ and the index. Each job downloads Geofabrik's Great Britain
 # extract once and cuts it a 1 degree square at a time. Run it from the Actions tab; `squares` limits a first run to a
-# few squares (Richmond's is 54,-2; York's 53,-2).
+# few squares (Richmond's is 54,-2; York's 53,-2); left empty it does every square of the blocks.
 
 on:
   workflow_dispatch:
@@ -24,7 +24,7 @@ on:
       squares:
         description: "Just these 1 degree squares (LAT,LON of the corner, space separated), or empty for every one"
         required: false
-        default: "54,-2 53,-2"
+        default: ""
       extract:
         description: "The OpenStreetMap extract"
         required: false
@@ -69,7 +69,7 @@ jobs:
           sudo apt-get update -q && sudo apt-get install -y -q osmium-tool
           pip install numpy pillow pyarrow osmium
       - name: Download the extract
-        run: curl -sSfL --retry 4 -o extract.osm.pbf "${{ inputs.extract }}" && ls -l extract.osm.pbf
+        run: curl -sSfL --retry 8 --retry-delay 30 --retry-all-errors -o extract.osm.pbf "${{ inputs.extract }}" && ls -l extract.osm.pbf
       - name: Make the road of the block's cells
         run: python3 scripts/roadx_backfill.py game/tools --pbf extract.osm.pbf --only "${{ matrix.block }}" --out entries --what "${{ inputs.what }}" ${{ inputs.squares && format('--squares {0}', inputs.squares) || '' }}
       - uses: actions/upload-artifact@v4
