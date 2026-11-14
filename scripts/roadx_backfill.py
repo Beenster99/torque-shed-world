@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Makes the road itself (the game's tools/roadx_bake.py: lanes, roundabouts, lights, crossings, humps, barriers, from
+"""[--what places: the places worth riding to instead (the game's tools/places_bake.py), into OUT/cROW_COL.places for
+index.py (places/ and the index's "places").]
+
+Makes the road itself (the game's tools/roadx_bake.py: lanes, roundabouts, lights, crossings, humps, barriers, from
 OpenStreetMap) of the baked cells of one 5 degree block, into OUT/cROW_COL.roadx for index.py to merge (roadx/ and the
 index's "roadx"). The extract (Geofabrik's Great Britain one) is cut to each 1 degree square once with osmium-tool.
 
@@ -23,9 +26,11 @@ def main(argv=None):
     ap.add_argument("--out", required=True)
     ap.add_argument("--squares", nargs="*", default=[], help="just these 1 degree squares (LAT,LON of their corner)")
     ap.add_argument("--release", help="the Overture release (default: the index's)")
+    ap.add_argument("--what", default="roadx", choices=("roadx", "places"))
     args = ap.parse_args(argv)
     sys.path.insert(0, args.tools)
     import coast_bake as cb
+    import places_bake as pb
     import roadx_bake as rb
     with open(idx.INDEX) as f:
         index = json.load(f)
@@ -47,13 +52,20 @@ def main(argv=None):
         # (a little over the square's edge, so a way crossing it is whole)
         subprocess.run(["osmium", "extract", "-b", "%.3f,%.3f,%.3f,%.3f" % (w - 0.02, s - 0.02, w + 1.02, s + 1.02),
                         "-s", "smart", "--overwrite", "-o", cut, args.pbf], check=True)
-        for baked in rb.bake_cells(cut, members, release, log=lambda m: None):
-            with open(os.path.join(args.out, "c%s.roadx" % baked["cell"]), "w") as f:
-                json.dump(baked, f, separators=(",", ":"))
-            print(rb.report(baked), flush=True)
-            n += 1
+        if args.what == "places":
+            for baked in pb.bake_cells(cut, members, release, log=lambda m: None):
+                with open(os.path.join(args.out, "c%s.places" % baked["cell"]), "w") as f:
+                    json.dump(baked, f, separators=(",", ":"), ensure_ascii=False)
+                print("%s: %d places" % (baked["cell"], len(baked["places"])), flush=True)
+                n += 1
+        else:
+            for baked in rb.bake_cells(cut, members, release, log=lambda m: None):
+                with open(os.path.join(args.out, "c%s.roadx" % baked["cell"]), "w") as f:
+                    json.dump(baked, f, separators=(",", ":"))
+                print(rb.report(baked), flush=True)
+                n += 1
         os.remove(cut)
-    print("roadx: %d cells of block %s (Overture %s)" % (n, args.only, release))
+    print("%s: %d cells of block %s (Overture %s)" % (args.what, n, args.only, release))
     return 0
 
 
