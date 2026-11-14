@@ -1,0 +1,103 @@
+name: Map the road itself
+
+# Makes the road itself (the game's tools/roadx_bake.py, OSM stage 5: lanes, roundabouts, traffic lights, crossings,
+# humps, passing places and crash barriers, from OpenStreetMap, joined to the cells' Overture roads) of the baked cells
+# of the chosen 5 degree blocks, and puts them in roadx/ and the index. Each job downloads Geofabrik's Great Britain
+# extract once and cuts it a 1 degree square at a time. Run it from the Actions tab; `squares` limits a first run to a
+# few squares (Richmond's is 54,-2; York's 53,-2).
+
+on:
+  workflow_dispatch:
+    inputs:
+      tools_ref:
+        description: "Branch, tag or commit of Beenster99/torque-shed whose tools/ make the road"
+        required: false
+        default: main
+      only:
+        description: "These 5 degree blocks (R_C,R_C,...)"
+        required: false
+        default: "28_35"
+      squares:
+        description: "Just these 1 degree squares (LAT,LON of the corner, space separated), or empty for every one"
+        required: false
+        default: "54,-2 53,-2"
+      extract:
+        description: "The OpenStreetMap extract"
+        required: false
+        default: "https://download.geofabrik.de/europe/united-kingdom-latest.osm.pbf"
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      blocks: ${{ steps.blocks.outputs.blocks }}
+    steps:
+      - id: blocks
+        env:
+          ONLY: ${{ inputs.only }}
+        run: python3 -c "import json, os; print('blocks=' + json.dumps([b for b in os.environ['ONLY'].split(',') if b]))" >> "$GITHUB_OUTPUT"
+
+  roadx:
+    needs: plan
+    if: needs.plan.outputs.blocks != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        block: ${{ fromJson(needs.plan.outputs.blocks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Beenster99/torque-shed
+          ref: ${{ inputs.tools_ref }}
+          path: game
+          sparse-checkout: tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          sudo apt-get update -q && sudo apt-get install -y -q osmium-tool
+          pip install numpy pillow pyarrow osmium
+      - name: Download the extract
+        run: curl -sSfL --retry 4 -o extract.osm.pbf "${{ inputs.extract }}" && ls -l extract.osm.pbf
+      - name: Make the road of the block's cells
+        run: python3 scripts/roadx_backfill.py game/tools --pbf extract.osm.pbf --only "${{ matrix.block }}" --out entries ${{ inputs.squares && format('--squares {0}', inputs.squares) || '' }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: roadx-${{ matrix.block }}
+          path: entries/
+          retention-days: 3
+          if-no-files-found: ignore
+
+  index:
+    needs: [plan, roadx]
+    if: always() && needs.plan.outputs.blocks != '[]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: roadx-*
+          path: entries
+      - name: Add the road to the index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p entries
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            git fetch origin main && git reset --hard origin/main
+            python3 scripts/index.py entries
+            git add index.json
+            if [ -d roadx ]; then git add roadx; fi
+            git diff --cached --quiet && exit 0
+            git commit -m "The road itself (run ${GITHUB_RUN_ID})"
+            git push origin HEAD:main && exit 0
+            sleep $((attempt * 5))
+          done
+          exit 1
