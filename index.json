@@ -27563,6 +27563,30 @@
    "buildings": 17,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b12_22/c249_444-a3276b2d3f2b75c0.bld.zip"
   },
+  "250_436": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "28c14510c8aa3eec",
+   "bytes": 43484,
+   "buildings": 2391,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b12_21/c250_436-28c14510c8aa3eec.bld.zip"
+  },
+  "250_437": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c4b12538ace351d8",
+   "bytes": 118503,
+   "buildings": 6799,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b12_21/c250_437-c4b12538ace351d8.bld.zip"
+  },
+  "250_438": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "e3ed3445737705b8",
+   "bytes": 1588148,
+   "buildings": 96986,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b12_21/c250_438-e3ed3445737705b8.bld.zip"
+  },
   "250_443": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -27578,6 +27602,54 @@
    "bytes": 6062,
    "buildings": 99,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b12_22/c250_444-d12014757b7fc5ba.bld.zip"
+  },
+  "251_436": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "b71a6f22f6fa6919",
+   "bytes": 365141,
+   "buildings": 21725,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b12_21/c251_436-b71a6f22f6fa6919.bld.zip"
+  },
+  "251_437": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7f7dbaa6df2ab5be",
+   "bytes": 6808,
+   "buildings": 130,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b12_21/c251_437-7f7dbaa6df2ab5be.bld.zip"
+  },
+  "251_438": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "3db70c9e5660ee0c",
+   "bytes": 12121,
+   "buildings": 487,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b12_21/c251_438-3db70c9e5660ee0c.bld.zip"
+  },
+  "252_436": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "77f9f57d8d5279b6",
+   "bytes": 25383,
+   "buildings": 1445,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b12_21/c252_436-77f9f57d8d5279b6.bld.zip"
+  },
+  "252_437": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "9f430199cd520ec4",
+   "bytes": 7078,
+   "buildings": 189,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b12_21/c252_437-9f430199cd520ec4.bld.zip"
+  },
+  "252_438": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c205514e06e345b7",
+   "bytes": 4517,
+   "buildings": 76,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b12_21/c252_438-c205514e06e345b7.bld.zip"
   },
   "267_546": {
    "release": "2026-10-21.0",
@@ -28035,6 +28107,14 @@
    "buildings": 206,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c483_1244-257ac7c9e4792b07.bld.zip"
   },
+  "484_1241": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "bbb51cc712271611",
+   "bytes": 28733,
+   "buildings": 1611,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c484_1241-bbb51cc712271611.bld.zip"
+  },
   "484_1242": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28066,6 +28146,14 @@
    "bytes": 76183,
    "buildings": 4202,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c485_1240-03f20987df22ae03.bld.zip"
+  },
+  "485_1241": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "1246b8365f8b7c26",
+   "bytes": 671803,
+   "buildings": 34083,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c485_1241-1246b8365f8b7c26.bld.zip"
   },
   "485_1242": {
    "release": "2026-10-21.0",
@@ -28123,6 +28211,14 @@
    "buildings": 0,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_61/c486_1239-f4eb9fc132778ceb.bld.zip"
   },
+  "486_1240": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "a0a34c2e2dcad072",
+   "bytes": 3449,
+   "buildings": 158,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c486_1240-a0a34c2e2dcad072.bld.zip"
+  },
   "486_1241": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28154,6 +28250,14 @@
    "bytes": 1541729,
    "buildings": 89704,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c486_1244-de21cb334003e0d8.bld.zip"
+  },
+  "486_1245": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "1bd184eb80232eed",
+   "bytes": 288721,
+   "buildings": 15938,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c486_1245-1bd184eb80232eed.bld.zip"
   },
   "487_1239": {
    "release": "2026-10-21.0",
@@ -28195,6 +28299,14 @@
    "buildings": 37123,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c487_1243-c4693f248f6885e4.bld.zip"
   },
+  "487_1244": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0914b35cb86904d7",
+   "bytes": 927595,
+   "buildings": 51960,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c487_1244-0914b35cb86904d7.bld.zip"
+  },
   "487_1245": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28234,6 +28346,14 @@
    "bytes": 611274,
    "buildings": 33537,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c488_1242-2f1cc8eb22ddbb2e.bld.zip"
+  },
+  "488_1243": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "8ec51e75e87a75fb",
+   "bytes": 899023,
+   "buildings": 48285,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c488_1243-8ec51e75e87a75fb.bld.zip"
   },
   "488_1244": {
    "release": "2026-10-21.0",
@@ -28275,6 +28395,14 @@
    "buildings": 28916,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c489_1240-ec2cdf7fd19a126c.bld.zip"
   },
+  "489_1241": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "bcfa237e95eacd5e",
+   "bytes": 309954,
+   "buildings": 16276,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c489_1241-bcfa237e95eacd5e.bld.zip"
+  },
   "489_1242": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28306,6 +28434,14 @@
    "bytes": 115207,
    "buildings": 5703,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c489_1245-cd9ebe41a3465b84.bld.zip"
+  },
+  "489_1246": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2e6585081cf9ad3d",
+   "bytes": 821673,
+   "buildings": 46549,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c489_1246-2e6585081cf9ad3d.bld.zip"
   },
   "490_1234": {
    "release": "2026-10-21.0",
@@ -28371,6 +28507,14 @@
    "buildings": 35844,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c490_1243-127b5ca1a360e4ab.bld.zip"
   },
+  "490_1244": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "4ee8fbb6cc7f8435",
+   "bytes": 117430,
+   "buildings": 5832,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c490_1244-4ee8fbb6cc7f8435.bld.zip"
+  },
   "490_1245": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28402,6 +28546,14 @@
    "bytes": 5382,
    "buildings": 220,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c490_1250-9d0a846a70ed23e8.bld.zip"
+  },
+  "490_1251": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "14bbcc29f71d75bd",
+   "bytes": 7069,
+   "buildings": 362,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c490_1251-14bbcc29f71d75bd.bld.zip"
   },
   "490_1252": {
    "release": "2026-10-21.0",
@@ -28483,6 +28635,14 @@
    "buildings": 234788,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c491_1242-8a9673de1bbeee7c.bld.zip"
   },
+  "491_1243": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "9fc707bb41c9f478",
+   "bytes": 2962991,
+   "buildings": 167119,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c491_1243-9fc707bb41c9f478.bld.zip"
+  },
   "491_1244": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28514,6 +28674,14 @@
    "bytes": 546712,
    "buildings": 30725,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c491_1247-54ac0cf1661919c1.bld.zip"
+  },
+  "491_1248": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "3a2b38f247a1c277",
+   "bytes": 7774,
+   "buildings": 375,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c491_1248-3a2b38f247a1c277.bld.zip"
   },
   "491_1249": {
    "release": "2026-10-21.0",
@@ -28579,6 +28747,14 @@
    "buildings": 64455,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_61/c492_1239-c7efc0e0983624c0.bld.zip"
   },
+  "492_1240": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "cffbc64a1a48780f",
+   "bytes": 1378109,
+   "buildings": 74721,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c492_1240-cffbc64a1a48780f.bld.zip"
+  },
   "492_1241": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28611,6 +28787,14 @@
    "buildings": 5714,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c492_1244-f5aa618aed48002b.bld.zip"
   },
+  "492_1245": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "25635f314982a13b",
+   "bytes": 354898,
+   "buildings": 19029,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c492_1245-25635f314982a13b.bld.zip"
+  },
   "492_1246": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28642,6 +28826,14 @@
    "bytes": 143397,
    "buildings": 7755,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c492_1249-39b713bad4d61deb.bld.zip"
+  },
+  "492_1250": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "4f43d6b3b78fce1e",
+   "bytes": 579025,
+   "buildings": 33186,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c492_1250-4f43d6b3b78fce1e.bld.zip"
   },
   "492_1251": {
    "release": "2026-10-21.0",
@@ -28707,6 +28899,14 @@
    "buildings": 73085,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_61/c493_1239-498963306a959885.bld.zip"
   },
+  "493_1240": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "8ab15c0a82ad2fad",
+   "bytes": 1037176,
+   "buildings": 55277,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c493_1240-8ab15c0a82ad2fad.bld.zip"
+  },
   "493_1241": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28738,6 +28938,14 @@
    "bytes": 284333,
    "buildings": 15006,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c493_1244-e0adeb84c8217738.bld.zip"
+  },
+  "493_1245": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "02406d8886edecba",
+   "bytes": 1118504,
+   "buildings": 60400,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c493_1245-02406d8886edecba.bld.zip"
   },
   "493_1246": {
    "release": "2026-10-21.0",
@@ -28771,6 +28979,14 @@
    "buildings": 27497,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c493_1249-df30e29ac179ca34.bld.zip"
   },
+  "493_1250": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "970ea52aed464aa9",
+   "bytes": 902793,
+   "buildings": 48186,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c493_1250-970ea52aed464aa9.bld.zip"
+  },
   "493_1251": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28803,6 +29019,14 @@
    "buildings": 6036,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c493_1254-5459ed43858e38d5.bld.zip"
   },
+  "493_1255": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0ca3f749ca95a89f",
+   "bytes": 91529,
+   "buildings": 4974,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c493_1255-0ca3f749ca95a89f.bld.zip"
+  },
   "493_1256": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28818,6 +29042,22 @@
    "bytes": 512,
    "buildings": 10,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c493_1257-47436fcbcba92c3b.bld.zip"
+  },
+  "493_1262": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "ee7fa68bb4c87033",
+   "bytes": 46491,
+   "buildings": 2308,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c493_1262-ee7fa68bb4c87033.bld.zip"
+  },
+  "493_1263": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "719a6da27caaf46d",
+   "bytes": 180060,
+   "buildings": 9650,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c493_1263-719a6da27caaf46d.bld.zip"
   },
   "494_1238": {
    "release": "2026-10-21.0",
@@ -28851,6 +29091,14 @@
    "buildings": 433540,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c494_1241-ebf3515ba2af9a5c.bld.zip"
   },
+  "494_1242": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "e56b88f56e9511d4",
+   "bytes": 2260639,
+   "buildings": 130213,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c494_1242-e56b88f56e9511d4.bld.zip"
+  },
   "494_1243": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28882,6 +29130,14 @@
    "bytes": 346338,
    "buildings": 18984,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c494_1246-edcb5b5866412096.bld.zip"
+  },
+  "494_1248": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "369685d65b390563",
+   "bytes": 2975,
+   "buildings": 164,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c494_1248-369685d65b390563.bld.zip"
   },
   "494_1249": {
    "release": "2026-10-21.0",
@@ -28915,6 +29171,14 @@
    "buildings": 7470,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c494_1252-2e152a14173e6f0c.bld.zip"
   },
+  "494_1253": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "999bdee61dfc08b5",
+   "bytes": 535278,
+   "buildings": 31103,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c494_1253-999bdee61dfc08b5.bld.zip"
+  },
   "494_1254": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -28946,6 +29210,46 @@
    "bytes": 303525,
    "buildings": 16784,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c494_1257-2af0e3db50ab21e9.bld.zip"
+  },
+  "494_1258": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "86751de70e1e4b13",
+   "bytes": 21492,
+   "buildings": 1052,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c494_1258-86751de70e1e4b13.bld.zip"
+  },
+  "494_1261": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "fc1df8e6d3047103",
+   "bytes": 854291,
+   "buildings": 43351,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c494_1261-fc1df8e6d3047103.bld.zip"
+  },
+  "494_1262": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "fd14eac97e62d0f7",
+   "bytes": 130152,
+   "buildings": 5949,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c494_1262-fd14eac97e62d0f7.bld.zip"
+  },
+  "494_1263": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "b5d6d00816801afe",
+   "bytes": 482368,
+   "buildings": 27216,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c494_1263-b5d6d00816801afe.bld.zip"
+  },
+  "494_1264": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "965107d907cc376d",
+   "bytes": 74962,
+   "buildings": 4379,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c494_1264-965107d907cc376d.bld.zip"
   },
   "495_1238": {
    "release": "2026-10-21.0",
@@ -28995,6 +29299,14 @@
    "buildings": 212608,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c495_1243-f6ee32d5e0c46d18.bld.zip"
   },
+  "495_1244": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "a935f0c20a34b7a1",
+   "bytes": 682082,
+   "buildings": 37701,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c495_1244-a935f0c20a34b7a1.bld.zip"
+  },
   "495_1245": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29026,6 +29338,14 @@
    "bytes": 787931,
    "buildings": 44397,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c495_1248-706cdd9421b2637a.bld.zip"
+  },
+  "495_1249": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "76d78115c586b7b1",
+   "bytes": 180836,
+   "buildings": 10043,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c495_1249-76d78115c586b7b1.bld.zip"
   },
   "495_1250": {
    "release": "2026-10-21.0",
@@ -29059,6 +29379,14 @@
    "buildings": 68121,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c495_1253-b3e6fbf36f6bd2eb.bld.zip"
   },
+  "495_1254": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "70d3bb3eb9cd7661",
+   "bytes": 161656,
+   "buildings": 9432,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c495_1254-70d3bb3eb9cd7661.bld.zip"
+  },
   "495_1255": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29090,6 +29418,62 @@
    "bytes": 527487,
    "buildings": 30428,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c495_1258-38fddb60318739d6.bld.zip"
+  },
+  "495_1259": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "57df806691ab3648",
+   "bytes": 4141,
+   "buildings": 216,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c495_1259-57df806691ab3648.bld.zip"
+  },
+  "495_1260": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "cd567831608b642e",
+   "bytes": 741875,
+   "buildings": 40399,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c495_1260-cd567831608b642e.bld.zip"
+  },
+  "495_1261": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "05c6ad87b9c7df52",
+   "bytes": 536240,
+   "buildings": 28864,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c495_1261-05c6ad87b9c7df52.bld.zip"
+  },
+  "495_1262": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "b063dd5ba950fb9c",
+   "bytes": 84609,
+   "buildings": 4407,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c495_1262-b063dd5ba950fb9c.bld.zip"
+  },
+  "495_1263": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "8e879760950d278d",
+   "bytes": 292600,
+   "buildings": 14563,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c495_1263-8e879760950d278d.bld.zip"
+  },
+  "495_1264": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "f868903f4055c90e",
+   "bytes": 719841,
+   "buildings": 32614,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c495_1264-f868903f4055c90e.bld.zip"
+  },
+  "495_1265": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "8a284f9d2e0e8a1e",
+   "bytes": 1861,
+   "buildings": 92,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c495_1265-8a284f9d2e0e8a1e.bld.zip"
   },
   "496_1236": {
    "release": "2026-10-21.0",
@@ -29139,6 +29523,14 @@
    "buildings": 59581,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c496_1246-06f08d4f5ff00aa2.bld.zip"
   },
+  "496_1247": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "f295423353447e4a",
+   "bytes": 1243671,
+   "buildings": 71767,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c496_1247-f295423353447e4a.bld.zip"
+  },
   "496_1248": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29170,6 +29562,14 @@
    "bytes": 996634,
    "buildings": 53552,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c496_1251-4f101d95bd46fad8.bld.zip"
+  },
+  "496_1252": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "9a1743b89e1e6919",
+   "bytes": 624516,
+   "buildings": 32708,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c496_1252-9a1743b89e1e6919.bld.zip"
   },
   "496_1253": {
    "release": "2026-10-21.0",
@@ -29203,6 +29603,14 @@
    "buildings": 31204,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c496_1256-fc9e35c4c286d619.bld.zip"
   },
+  "496_1257": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7f8ec7562e17052b",
+   "bytes": 1175686,
+   "buildings": 67633,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c496_1257-7f8ec7562e17052b.bld.zip"
+  },
   "496_1258": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29218,6 +29626,62 @@
    "bytes": 4787,
    "buildings": 216,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c496_1259-4cc1ee3f7632e969.bld.zip"
+  },
+  "496_1260": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "9ba4471c95ae03a9",
+   "bytes": 2759068,
+   "buildings": 149627,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c496_1260-9ba4471c95ae03a9.bld.zip"
+  },
+  "496_1261": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "802991bfad95cd7b",
+   "bytes": 765543,
+   "buildings": 44397,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c496_1261-802991bfad95cd7b.bld.zip"
+  },
+  "496_1262": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "23376c753bdeed41",
+   "bytes": 89835,
+   "buildings": 4366,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c496_1262-23376c753bdeed41.bld.zip"
+  },
+  "496_1263": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0504949b30b6ab38",
+   "bytes": 90771,
+   "buildings": 4657,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c496_1263-0504949b30b6ab38.bld.zip"
+  },
+  "496_1264": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "be972bbf569e9a2e",
+   "bytes": 251502,
+   "buildings": 14229,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c496_1264-be972bbf569e9a2e.bld.zip"
+  },
+  "496_1265": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "87fd0d60912214bc",
+   "bytes": 154810,
+   "buildings": 8518,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c496_1265-87fd0d60912214bc.bld.zip"
+  },
+  "496_1267": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "98d876fd594efc8b",
+   "bytes": 536,
+   "buildings": 11,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c496_1267-98d876fd594efc8b.bld.zip"
   },
   "496_242": {
    "release": "2026-10-21.0",
@@ -29267,6 +29731,14 @@
    "buildings": 15007,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c497_1244-918497440ce47a10.bld.zip"
   },
+  "497_1245": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "f9059c39e7790b56",
+   "bytes": 510866,
+   "buildings": 28529,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c497_1245-f9059c39e7790b56.bld.zip"
+  },
   "497_1246": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29298,6 +29770,14 @@
    "bytes": 5002222,
    "buildings": 264435,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c497_1249-d56e1eaffc4492e9.bld.zip"
+  },
+  "497_1250": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "8145db40a7a31ef5",
+   "bytes": 3613245,
+   "buildings": 196097,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c497_1250-8145db40a7a31ef5.bld.zip"
   },
   "497_1251": {
    "release": "2026-10-21.0",
@@ -29331,6 +29811,14 @@
    "buildings": 21528,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c497_1254-d13be7d78bdb462a.bld.zip"
   },
+  "497_1255": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "d85b26dfcee16a57",
+   "bytes": 2044247,
+   "buildings": 117568,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c497_1255-d85b26dfcee16a57.bld.zip"
+  },
   "497_1256": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29363,6 +29851,70 @@
    "buildings": 37394,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c497_1259-1984125406a2453e.bld.zip"
   },
+  "497_1260": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0adbc9b20deeb30a",
+   "bytes": 1000024,
+   "buildings": 59023,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c497_1260-0adbc9b20deeb30a.bld.zip"
+  },
+  "497_1261": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "54323729ea2d8dec",
+   "bytes": 4992120,
+   "buildings": 281411,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c497_1261-54323729ea2d8dec.bld.zip"
+  },
+  "497_1262": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7bd4fc317ff23e15",
+   "bytes": 3684320,
+   "buildings": 201479,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c497_1262-7bd4fc317ff23e15.bld.zip"
+  },
+  "497_1263": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "f7237fe977956b4b",
+   "bytes": 1348309,
+   "buildings": 70117,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c497_1263-f7237fe977956b4b.bld.zip"
+  },
+  "497_1264": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2749d20fa96eb614",
+   "bytes": 83653,
+   "buildings": 4293,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c497_1264-2749d20fa96eb614.bld.zip"
+  },
+  "497_1265": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "9209bf5fc004087c",
+   "bytes": 473487,
+   "buildings": 26885,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c497_1265-9209bf5fc004087c.bld.zip"
+  },
+  "497_1266": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "8a66aaaa6ddcef70",
+   "bytes": 1621168,
+   "buildings": 79988,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c497_1266-8a66aaaa6ddcef70.bld.zip"
+  },
+  "497_1267": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "91934180cf1a4278",
+   "bytes": 772166,
+   "buildings": 43831,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c497_1267-91934180cf1a4278.bld.zip"
+  },
   "497_242": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29386,6 +29938,14 @@
    "bytes": 170853,
    "buildings": 8862,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_61/c498_1237-198bc5a9d6be1614.bld.zip"
+  },
+  "498_1245": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2a94bb6f2c575f1f",
+   "bytes": 33685,
+   "buildings": 1837,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c498_1245-2a94bb6f2c575f1f.bld.zip"
   },
   "498_1246": {
    "release": "2026-10-21.0",
@@ -29419,6 +29979,14 @@
    "buildings": 21493,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c498_1249-991559dd070e3011.bld.zip"
   },
+  "498_1250": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "29a84704cc0979d9",
+   "bytes": 629353,
+   "buildings": 30742,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c498_1250-29a84704cc0979d9.bld.zip"
+  },
   "498_1251": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29450,6 +30018,14 @@
    "bytes": 2980667,
    "buildings": 170018,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c498_1254-a0728fe9d945fd64.bld.zip"
+  },
+  "498_1255": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "b0917247eb1aa553",
+   "bytes": 9636184,
+   "buildings": 474939,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c498_1255-b0917247eb1aa553.bld.zip"
   },
   "498_1256": {
    "release": "2026-10-21.0",
@@ -29483,6 +30059,158 @@
    "buildings": 154750,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c498_1259-624a05dbc90299a8.bld.zip"
   },
+  "498_1260": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "afda58c91a8c72c7",
+   "bytes": 3968658,
+   "buildings": 227687,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1260-afda58c91a8c72c7.bld.zip"
+  },
+  "498_1261": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "a02c52e16b38a444",
+   "bytes": 9716187,
+   "buildings": 544013,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1261-a02c52e16b38a444.bld.zip"
+  },
+  "498_1262": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c12743154ec0f2e0",
+   "bytes": 21691832,
+   "buildings": 1246219,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1262-c12743154ec0f2e0.bld.zip"
+  },
+  "498_1263": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "994241a3fc2c6edf",
+   "bytes": 6083252,
+   "buildings": 323548,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1263-994241a3fc2c6edf.bld.zip"
+  },
+  "498_1264": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c19e95e99f50e1fa",
+   "bytes": 1398092,
+   "buildings": 82447,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1264-c19e95e99f50e1fa.bld.zip"
+  },
+  "498_1265": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "a817c69e429c7ad9",
+   "bytes": 1655204,
+   "buildings": 96648,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1265-a817c69e429c7ad9.bld.zip"
+  },
+  "498_1266": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "12fa535df4c00ea6",
+   "bytes": 3041390,
+   "buildings": 164494,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1266-12fa535df4c00ea6.bld.zip"
+  },
+  "498_1267": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "20cea0a82702a496",
+   "bytes": 299039,
+   "buildings": 15488,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1267-20cea0a82702a496.bld.zip"
+  },
+  "498_1268": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "190d0616d5741c70",
+   "bytes": 602605,
+   "buildings": 32185,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1268-190d0616d5741c70.bld.zip"
+  },
+  "498_1269": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "100ca0aa0ef993fd",
+   "bytes": 1910216,
+   "buildings": 109542,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1269-100ca0aa0ef993fd.bld.zip"
+  },
+  "498_1270": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "fc0966ffef0a1636",
+   "bytes": 3165780,
+   "buildings": 177595,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1270-fc0966ffef0a1636.bld.zip"
+  },
+  "498_1271": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "9537827ee51a5041",
+   "bytes": 2529173,
+   "buildings": 160813,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1271-9537827ee51a5041.bld.zip"
+  },
+  "498_1272": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "4f3497d50f102525",
+   "bytes": 1699604,
+   "buildings": 89125,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1272-4f3497d50f102525.bld.zip"
+  },
+  "498_1273": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "fc8bbdf329c5a8c9",
+   "bytes": 4437,
+   "buildings": 234,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1273-fc8bbdf329c5a8c9.bld.zip"
+  },
+  "498_1274": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "753d8b128fbd930a",
+   "bytes": 4797,
+   "buildings": 231,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1274-753d8b128fbd930a.bld.zip"
+  },
+  "498_1275": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "3a7bd73565dbf008",
+   "bytes": 471068,
+   "buildings": 27721,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1275-3a7bd73565dbf008.bld.zip"
+  },
+  "498_1276": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7ca8611e15e29560",
+   "bytes": 737,
+   "buildings": 23,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1276-7ca8611e15e29560.bld.zip"
+  },
+  "498_1277": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7350eaaa8d08afaa",
+   "bytes": 110170,
+   "buildings": 5300,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c498_1277-7350eaaa8d08afaa.bld.zip"
+  },
+  "499_1244": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0fadb8af0a179511",
+   "bytes": 26734,
+   "buildings": 1378,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c499_1244-0fadb8af0a179511.bld.zip"
+  },
   "499_1247": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29514,6 +30242,14 @@
    "bytes": 124850,
    "buildings": 6376,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c499_1250-254177689accedad.bld.zip"
+  },
+  "499_1251": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "4f6ce32561f3d6be",
+   "bytes": 523273,
+   "buildings": 28705,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c499_1251-4f6ce32561f3d6be.bld.zip"
   },
   "499_1252": {
    "release": "2026-10-21.0",
@@ -29547,6 +30283,14 @@
    "buildings": 44266,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c499_1255-a0c91644a438b066.bld.zip"
   },
+  "499_1256": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "eeac8a48ff53bb3a",
+   "bytes": 1056435,
+   "buildings": 54783,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c499_1256-eeac8a48ff53bb3a.bld.zip"
+  },
   "499_1257": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29570,6 +30314,254 @@
    "bytes": 5302387,
    "buildings": 282695,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_62/c499_1259-f36a56cf922dfa88.bld.zip"
+  },
+  "499_1260": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "76ed0d1fee9b211d",
+   "bytes": 2838014,
+   "buildings": 149027,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1260-76ed0d1fee9b211d.bld.zip"
+  },
+  "499_1261": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7b1d04431b830b69",
+   "bytes": 7450711,
+   "buildings": 404758,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1261-7b1d04431b830b69.bld.zip"
+  },
+  "499_1262": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "d952f88e2928a7c6",
+   "bytes": 13168221,
+   "buildings": 769108,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1262-d952f88e2928a7c6.bld.zip"
+  },
+  "499_1263": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "85344820dc263f0b",
+   "bytes": 6745534,
+   "buildings": 377454,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1263-85344820dc263f0b.bld.zip"
+  },
+  "499_1264": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "085390d76c0c3f6c",
+   "bytes": 1896189,
+   "buildings": 108971,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1264-085390d76c0c3f6c.bld.zip"
+  },
+  "499_1265": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6770eab12d190d2f",
+   "bytes": 1355888,
+   "buildings": 77860,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1265-6770eab12d190d2f.bld.zip"
+  },
+  "499_1266": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "d6fd9a96a09057c3",
+   "bytes": 5248673,
+   "buildings": 268592,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1266-d6fd9a96a09057c3.bld.zip"
+  },
+  "499_1267": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "3b8eae2cd775eb03",
+   "bytes": 3833044,
+   "buildings": 219501,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1267-3b8eae2cd775eb03.bld.zip"
+  },
+  "499_1268": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "df4a5e8f610973e1",
+   "bytes": 6174968,
+   "buildings": 353469,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1268-df4a5e8f610973e1.bld.zip"
+  },
+  "499_1269": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "a33e571a81fb92ba",
+   "bytes": 3659818,
+   "buildings": 202369,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1269-a33e571a81fb92ba.bld.zip"
+  },
+  "499_1270": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "83289dc588763509",
+   "bytes": 1956788,
+   "buildings": 113534,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1270-83289dc588763509.bld.zip"
+  },
+  "499_1271": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "f493b155e639f561",
+   "bytes": 2470820,
+   "buildings": 146400,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1271-f493b155e639f561.bld.zip"
+  },
+  "499_1272": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "bffd2cdce7bdb63b",
+   "bytes": 2360681,
+   "buildings": 132686,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1272-bffd2cdce7bdb63b.bld.zip"
+  },
+  "499_1273": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "441de30d157f07da",
+   "bytes": 5169021,
+   "buildings": 293078,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1273-441de30d157f07da.bld.zip"
+  },
+  "499_1274": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "83013d87b58f5106",
+   "bytes": 115377,
+   "buildings": 5831,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1274-83013d87b58f5106.bld.zip"
+  },
+  "499_1275": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2c338c10b6edc8cd",
+   "bytes": 863413,
+   "buildings": 45660,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1275-2c338c10b6edc8cd.bld.zip"
+  },
+  "499_1276": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "50e2512323a65fe7",
+   "bytes": 966538,
+   "buildings": 54774,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1276-50e2512323a65fe7.bld.zip"
+  },
+  "499_1277": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "1207284cf5c36767",
+   "bytes": 120554,
+   "buildings": 6029,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1277-1207284cf5c36767.bld.zip"
+  },
+  "499_1279": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "451b87aacb8fd6b9",
+   "bytes": 859509,
+   "buildings": 50064,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b24_63/c499_1279-451b87aacb8fd6b9.bld.zip"
+  },
+  "500_1248": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7e8d16f2cc5ee897",
+   "bytes": 33226,
+   "buildings": 1889,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1248-7e8d16f2cc5ee897.bld.zip"
+  },
+  "500_1249": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "9b210ad6b605a99d",
+   "bytes": 201912,
+   "buildings": 10333,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1249-9b210ad6b605a99d.bld.zip"
+  },
+  "500_1250": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "a988918431737926",
+   "bytes": 238179,
+   "buildings": 12670,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1250-a988918431737926.bld.zip"
+  },
+  "500_1251": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "f9582a42a38d76c1",
+   "bytes": 141950,
+   "buildings": 6798,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1251-f9582a42a38d76c1.bld.zip"
+  },
+  "500_1252": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "d35f693675fbd429",
+   "bytes": 195441,
+   "buildings": 10050,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1252-d35f693675fbd429.bld.zip"
+  },
+  "500_1253": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6529e637bdde76fb",
+   "bytes": 84637,
+   "buildings": 4128,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1253-6529e637bdde76fb.bld.zip"
+  },
+  "500_1254": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "67508ddb8d895749",
+   "bytes": 237986,
+   "buildings": 12027,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1254-67508ddb8d895749.bld.zip"
+  },
+  "500_1255": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "ef03246057f9adac",
+   "bytes": 336319,
+   "buildings": 17651,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1255-ef03246057f9adac.bld.zip"
+  },
+  "500_1256": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "541e7391f7002c54",
+   "bytes": 716921,
+   "buildings": 36907,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1256-541e7391f7002c54.bld.zip"
+  },
+  "500_1257": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "1340bfb073d59cfe",
+   "bytes": 275887,
+   "buildings": 14105,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1257-1340bfb073d59cfe.bld.zip"
+  },
+  "500_1258": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "436218cda3581a8f",
+   "bytes": 358999,
+   "buildings": 17957,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1258-436218cda3581a8f.bld.zip"
+  },
+  "500_1259": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "4492fbbfc00386c3",
+   "bytes": 694683,
+   "buildings": 38223,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c500_1259-4492fbbfc00386c3.bld.zip"
   },
   "500_1260": {
    "release": "2026-10-21.0",
@@ -29602,6 +30594,14 @@
    "bytes": 5114598,
    "buildings": 284107,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c500_1263-828264377c560358.bld.zip"
+  },
+  "500_1264": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "adbedf575737443f",
+   "bytes": 3518568,
+   "buildings": 201376,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c500_1264-adbedf575737443f.bld.zip"
   },
   "500_1265": {
    "release": "2026-10-21.0",
@@ -29643,6 +30643,14 @@
    "buildings": 22120,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c500_1269-3319fd9a0dfbd6ff.bld.zip"
   },
+  "500_1270": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "24e54f2a477288ea",
+   "bytes": 332006,
+   "buildings": 18559,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c500_1270-24e54f2a477288ea.bld.zip"
+  },
   "500_1271": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29683,6 +30691,14 @@
    "buildings": 244961,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c500_1275-503b4f6e5030b03b.bld.zip"
   },
+  "500_1276": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "e119b7c8c5526f27",
+   "bytes": 1033545,
+   "buildings": 55341,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c500_1276-e119b7c8c5526f27.bld.zip"
+  },
   "500_1278": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29699,6 +30715,14 @@
    "buildings": 72749,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c500_1279-e911f0cab8c356fc.bld.zip"
   },
+  "500_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7bbb8022ba4ce612",
+   "bytes": 639142,
+   "buildings": 35449,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c500_1280-7bbb8022ba4ce612.bld.zip"
+  },
   "500_1281": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29706,6 +30730,86 @@
    "bytes": 354682,
    "buildings": 20039,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c500_1281-d1840fa419e59f29.bld.zip"
+  },
+  "501_1250": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2b0379398ff44e12",
+   "bytes": 816831,
+   "buildings": 43417,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c501_1250-2b0379398ff44e12.bld.zip"
+  },
+  "501_1251": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "63b6f45c78f8eb4f",
+   "bytes": 1348294,
+   "buildings": 68931,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c501_1251-63b6f45c78f8eb4f.bld.zip"
+  },
+  "501_1252": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "332d281b7a2764c3",
+   "bytes": 1641136,
+   "buildings": 86469,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c501_1252-332d281b7a2764c3.bld.zip"
+  },
+  "501_1253": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "90246a5f5e1863e7",
+   "bytes": 2072941,
+   "buildings": 98143,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c501_1253-90246a5f5e1863e7.bld.zip"
+  },
+  "501_1254": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "935a834d63e2e2cc",
+   "bytes": 152680,
+   "buildings": 7709,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c501_1254-935a834d63e2e2cc.bld.zip"
+  },
+  "501_1255": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "48cb5d44320de93f",
+   "bytes": 868612,
+   "buildings": 48078,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c501_1255-48cb5d44320de93f.bld.zip"
+  },
+  "501_1256": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "047180be3fecba2d",
+   "bytes": 1240349,
+   "buildings": 61734,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c501_1256-047180be3fecba2d.bld.zip"
+  },
+  "501_1257": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "d3fdf8e3ea2bce48",
+   "bytes": 659226,
+   "buildings": 32452,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c501_1257-d3fdf8e3ea2bce48.bld.zip"
+  },
+  "501_1258": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2c5a4d5e0243dda8",
+   "bytes": 214103,
+   "buildings": 9337,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c501_1258-2c5a4d5e0243dda8.bld.zip"
+  },
+  "501_1259": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "45e071ae51d771c3",
+   "bytes": 895297,
+   "buildings": 40741,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c501_1259-45e071ae51d771c3.bld.zip"
   },
   "501_1260": {
    "release": "2026-10-21.0",
@@ -29730,6 +30834,14 @@
    "bytes": 793698,
    "buildings": 37865,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c501_1262-2045a1a085d70bbe.bld.zip"
+  },
+  "501_1263": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "be7e3b8658890706",
+   "bytes": 563247,
+   "buildings": 28351,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c501_1263-be7e3b8658890706.bld.zip"
   },
   "501_1264": {
    "release": "2026-10-21.0",
@@ -29771,6 +30883,14 @@
    "buildings": 275759,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c501_1268-8b059efb61705c16.bld.zip"
   },
+  "501_1269": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "e7e1eef6e3951ac2",
+   "bytes": 1275894,
+   "buildings": 70338,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c501_1269-e7e1eef6e3951ac2.bld.zip"
+  },
   "501_1270": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29810,6 +30930,14 @@
    "bytes": 732983,
    "buildings": 38353,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c501_1274-e4967cfc9b6a4f75.bld.zip"
+  },
+  "501_1275": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "ae37fc6108da2f86",
+   "bytes": 1808226,
+   "buildings": 97484,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c501_1275-ae37fc6108da2f86.bld.zip"
   },
   "501_1276": {
    "release": "2026-10-21.0",
@@ -29851,6 +30979,86 @@
    "buildings": 116719,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c501_1280-9e1b1ee3d3eb4bc9.bld.zip"
   },
+  "501_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "b78cad30023ce097",
+   "bytes": 2356158,
+   "buildings": 132689,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c501_1281-b78cad30023ce097.bld.zip"
+  },
+  "502_1251": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c57ff42d8c59a050",
+   "bytes": 60896,
+   "buildings": 3351,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c502_1251-c57ff42d8c59a050.bld.zip"
+  },
+  "502_1252": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c82afef45073b5d5",
+   "bytes": 499274,
+   "buildings": 28027,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c502_1252-c82afef45073b5d5.bld.zip"
+  },
+  "502_1253": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "247904ff4b8f6aab",
+   "bytes": 39804,
+   "buildings": 1948,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c502_1253-247904ff4b8f6aab.bld.zip"
+  },
+  "502_1254": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "a3366bc55a17ab29",
+   "bytes": 110528,
+   "buildings": 6168,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c502_1254-a3366bc55a17ab29.bld.zip"
+  },
+  "502_1255": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "9601e3ca0534d84f",
+   "bytes": 78299,
+   "buildings": 4046,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c502_1255-9601e3ca0534d84f.bld.zip"
+  },
+  "502_1256": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c7a0caa02b57efea",
+   "bytes": 897709,
+   "buildings": 44407,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c502_1256-c7a0caa02b57efea.bld.zip"
+  },
+  "502_1257": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7b21ccb3ad4e7390",
+   "bytes": 484714,
+   "buildings": 25427,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c502_1257-7b21ccb3ad4e7390.bld.zip"
+  },
+  "502_1258": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "56970225648f9718",
+   "bytes": 262244,
+   "buildings": 13130,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c502_1258-56970225648f9718.bld.zip"
+  },
+  "502_1259": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "dd92478eb57f9b0f",
+   "bytes": 914471,
+   "buildings": 46737,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c502_1259-dd92478eb57f9b0f.bld.zip"
+  },
   "502_1260": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29858,6 +31066,14 @@
    "bytes": 1093813,
    "buildings": 57251,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c502_1260-5252e7fd98416420.bld.zip"
+  },
+  "502_1261": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6958289e08a99721",
+   "bytes": 168725,
+   "buildings": 9110,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c502_1261-6958289e08a99721.bld.zip"
   },
   "502_1262": {
    "release": "2026-10-21.0",
@@ -29899,6 +31115,14 @@
    "buildings": 9749,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c502_1266-e69597b39bd9c707.bld.zip"
   },
+  "502_1267": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "68ac72d4c0a1118d",
+   "bytes": 879429,
+   "buildings": 49014,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c502_1267-68ac72d4c0a1118d.bld.zip"
+  },
   "502_1268": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29938,6 +31162,14 @@
    "bytes": 57889,
    "buildings": 2657,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c502_1272-f9e0867f50977e9f.bld.zip"
+  },
+  "502_1273": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "71c4c50180722f43",
+   "bytes": 1342273,
+   "buildings": 79757,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c502_1273-71c4c50180722f43.bld.zip"
   },
   "502_1274": {
    "release": "2026-10-21.0",
@@ -29979,6 +31211,14 @@
    "buildings": 1676793,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c502_1278-66075e576ffa6359.bld.zip"
   },
+  "502_1279": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "9cd42c95736a874b",
+   "bytes": 9965050,
+   "buildings": 553077,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c502_1279-9cd42c95736a874b.bld.zip"
+  },
   "502_1280": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -29995,6 +31235,14 @@
    "buildings": 227418,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c502_1281-6eaa74654b830e68.bld.zip"
   },
+  "502_1282": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "3562b12bf63a11ee",
+   "bytes": 1508038,
+   "buildings": 88922,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c502_1282-3562b12bf63a11ee.bld.zip"
+  },
   "502_1283": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30002,6 +31250,14 @@
    "bytes": 539959,
    "buildings": 31432,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c502_1283-65d2aa6c4022a991.bld.zip"
+  },
+  "503_1252": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "85fcbc5a1a34ee7d",
+   "bytes": 388,
+   "buildings": 2,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c503_1252-85fcbc5a1a34ee7d.bld.zip"
   },
   "503_1260": {
    "release": "2026-10-21.0",
@@ -30043,6 +31299,14 @@
    "buildings": 22529,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c503_1265-c65cdf06cbc92f0f.bld.zip"
   },
+  "503_1266": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "5dddaeceda1fc322",
+   "bytes": 97898,
+   "buildings": 5605,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c503_1266-5dddaeceda1fc322.bld.zip"
+  },
   "503_1267": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30082,6 +31346,14 @@
    "bytes": 1494805,
    "buildings": 85119,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c503_1271-48ade8a42d3c20b3.bld.zip"
+  },
+  "503_1272": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "24d989685f5a0076",
+   "bytes": 1328749,
+   "buildings": 64322,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c503_1272-24d989685f5a0076.bld.zip"
   },
   "503_1273": {
    "release": "2026-10-21.0",
@@ -30123,6 +31395,14 @@
    "buildings": 666525,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c503_1277-4caa452e676da584.bld.zip"
   },
+  "503_1278": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "be0bfc6091b435d4",
+   "bytes": 19951640,
+   "buildings": 1069013,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c503_1278-be0bfc6091b435d4.bld.zip"
+  },
   "503_1279": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30139,6 +31419,14 @@
    "buildings": 322845,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c503_1280-85c487f761d700bc.bld.zip"
   },
+  "503_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "57ea61757114ac38",
+   "bytes": 2714350,
+   "buildings": 153773,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c503_1281-57ea61757114ac38.bld.zip"
+  },
   "503_1282": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30154,6 +31442,30 @@
    "bytes": 292360,
    "buildings": 16263,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c503_1283-8e0fb7744e04d77b.bld.zip"
+  },
+  "504_1251": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "a06f5da15ace015b",
+   "bytes": 23775,
+   "buildings": 1236,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c504_1251-a06f5da15ace015b.bld.zip"
+  },
+  "504_1252": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2a06d99a581ee3d8",
+   "bytes": 142897,
+   "buildings": 7191,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c504_1252-2a06d99a581ee3d8.bld.zip"
+  },
+  "504_1253": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "3cb6e8dbb0881f19",
+   "bytes": 142070,
+   "buildings": 7513,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c504_1253-3cb6e8dbb0881f19.bld.zip"
   },
   "504_1263": {
    "release": "2026-10-21.0",
@@ -30186,6 +31498,14 @@
    "bytes": 182719,
    "buildings": 9910,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c504_1266-de9adaff555606b1.bld.zip"
+  },
+  "504_1267": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "3162e3e8e39128fc",
+   "bytes": 42111,
+   "buildings": 2061,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c504_1267-3162e3e8e39128fc.bld.zip"
   },
   "504_1268": {
    "release": "2026-10-21.0",
@@ -30227,6 +31547,14 @@
    "buildings": 108475,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c504_1272-aa7ea5cfd5f6cf05.bld.zip"
   },
+  "504_1273": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "030fa8cdc65cf8ff",
+   "bytes": 1516125,
+   "buildings": 68415,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c504_1273-030fa8cdc65cf8ff.bld.zip"
+  },
   "504_1274": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30267,6 +31595,22 @@
    "buildings": 418241,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c504_1278-722923319e2e7258.bld.zip"
   },
+  "504_1279": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "a77d35e21143c5b9",
+   "bytes": 4599770,
+   "buildings": 265425,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c504_1279-a77d35e21143c5b9.bld.zip"
+  },
+  "504_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "41b31188c7187d8f",
+   "bytes": 4571668,
+   "buildings": 255029,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c504_1280-41b31188c7187d8f.bld.zip"
+  },
   "504_1281": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30282,6 +31626,22 @@
    "bytes": 1868273,
    "buildings": 89555,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c504_1282-490102f3d69633b8.bld.zip"
+  },
+  "505_1252": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "929c5af57a02ee50",
+   "bytes": 30657,
+   "buildings": 1555,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c505_1252-929c5af57a02ee50.bld.zip"
+  },
+  "505_1253": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "12bab05778d7c02e",
+   "bytes": 46482,
+   "buildings": 2412,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_62/c505_1253-12bab05778d7c02e.bld.zip"
   },
   "505_1264": {
    "release": "2026-10-21.0",
@@ -30323,6 +31683,14 @@
    "buildings": 7328,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c505_1268-cdf001989bf70d24.bld.zip"
   },
+  "505_1269": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "e4a4de33844a534c",
+   "bytes": 159926,
+   "buildings": 8367,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c505_1269-e4a4de33844a534c.bld.zip"
+  },
   "505_1270": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30363,6 +31731,14 @@
    "buildings": 41116,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c505_1274-9703cb2ef86799f0.bld.zip"
   },
+  "505_1275": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "fefec452a26bb9a9",
+   "bytes": 3012848,
+   "buildings": 177073,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c505_1275-fefec452a26bb9a9.bld.zip"
+  },
   "505_1276": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30395,6 +31771,14 @@
    "buildings": 310905,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c505_1279-ce265fb9ebdd6566.bld.zip"
   },
+  "505_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "100204f696f38654",
+   "bytes": 2144196,
+   "buildings": 124257,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c505_1280-100204f696f38654.bld.zip"
+  },
   "505_1281": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30418,6 +31802,14 @@
    "bytes": 2486,
    "buildings": 112,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c506_1265-a0cc61400db19e2f.bld.zip"
+  },
+  "506_1266": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "74308b61989d7390",
+   "bytes": 3147637,
+   "buildings": 173274,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c506_1266-74308b61989d7390.bld.zip"
   },
   "506_1267": {
    "release": "2026-10-21.0",
@@ -30459,6 +31851,14 @@
    "buildings": 25756,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c506_1271-18ee1e10aac44f8c.bld.zip"
   },
+  "506_1272": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6507de9205f18db1",
+   "bytes": 4012371,
+   "buildings": 220119,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c506_1272-6507de9205f18db1.bld.zip"
+  },
   "506_1273": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30499,6 +31899,14 @@
    "buildings": 6045,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c506_1277-68332496a8f4139b.bld.zip"
   },
+  "506_1278": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "d3dbd37b011e7c8c",
+   "bytes": 745323,
+   "buildings": 43157,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c506_1278-d3dbd37b011e7c8c.bld.zip"
+  },
   "506_1279": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30506,6 +31914,14 @@
    "bytes": 4624510,
    "buildings": 281222,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c506_1279-3037c3c19bc83b06.bld.zip"
+  },
+  "506_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "022c2c15009e3b72",
+   "bytes": 1548640,
+   "buildings": 88786,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c506_1280-022c2c15009e3b72.bld.zip"
   },
   "506_1281": {
    "release": "2026-10-21.0",
@@ -30555,6 +31971,14 @@
    "buildings": 84881,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c507_1269-53dc050343eb7cbb.bld.zip"
   },
+  "507_1270": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "d5005e799021e2e2",
+   "bytes": 514786,
+   "buildings": 28596,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c507_1270-d5005e799021e2e2.bld.zip"
+  },
   "507_1271": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30595,6 +32019,14 @@
    "buildings": 10492,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c507_1275-021669f0a7d80f2c.bld.zip"
   },
+  "507_1276": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0029a3d4ebd1cb20",
+   "bytes": 42281,
+   "buildings": 2037,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c507_1276-0029a3d4ebd1cb20.bld.zip"
+  },
   "507_1277": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30619,6 +32051,14 @@
    "buildings": 68257,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c507_1279-39b6dd17ed6d5eea.bld.zip"
   },
+  "507_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "964dd1814d246363",
+   "bytes": 1846075,
+   "buildings": 101469,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c507_1280-964dd1814d246363.bld.zip"
+  },
   "507_1281": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30634,6 +32074,14 @@
    "bytes": 538551,
    "buildings": 29272,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c507_1282-3b14c82dfdf177d9.bld.zip"
+  },
+  "507_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "9da02c13e6bc6671",
+   "bytes": 1664422,
+   "buildings": 85809,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c507_1283-9da02c13e6bc6671.bld.zip"
   },
   "507_708": {
    "release": "2026-10-21.0",
@@ -30666,6 +32114,14 @@
    "bytes": 1161078,
    "buildings": 60315,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c508_1267-869c06bbca86546d.bld.zip"
+  },
+  "508_1268": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "4fe7eb7302495a67",
+   "bytes": 141641,
+   "buildings": 7412,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c508_1268-4fe7eb7302495a67.bld.zip"
   },
   "508_1270": {
    "release": "2026-10-21.0",
@@ -30706,6 +32162,14 @@
    "bytes": 476714,
    "buildings": 26064,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c508_1274-329579a0065686b2.bld.zip"
+  },
+  "508_1275": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "78b70ffb14366e14",
+   "bytes": 1143311,
+   "buildings": 63174,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c508_1275-78b70ffb14366e14.bld.zip"
   },
   "508_1276": {
    "release": "2026-10-21.0",
@@ -30755,6 +32219,14 @@
    "buildings": 85122,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c508_1281-5af09e9854b1da6c.bld.zip"
   },
+  "508_1282": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "3f157ff7feb95dee",
+   "bytes": 469429,
+   "buildings": 25062,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c508_1282-3f157ff7feb95dee.bld.zip"
+  },
   "508_1283": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30778,6 +32250,14 @@
    "bytes": 48772,
    "buildings": 2578,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c509_1266-1e0ff3cc16b591ac.bld.zip"
+  },
+  "509_1267": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "1cb524363e474f10",
+   "bytes": 398766,
+   "buildings": 22458,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c509_1267-1cb524363e474f10.bld.zip"
   },
   "509_1268": {
    "release": "2026-10-21.0",
@@ -30819,6 +32299,14 @@
    "buildings": 136056,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c509_1275-64fd932ce2d8a88b.bld.zip"
   },
+  "509_1276": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0adbe00848680641",
+   "bytes": 174243,
+   "buildings": 9381,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c509_1276-0adbe00848680641.bld.zip"
+  },
   "509_1277": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30843,6 +32331,14 @@
    "buildings": 63984,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c509_1279-63f75761a714eef9.bld.zip"
   },
+  "509_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "9872ee3a0d4a5e32",
+   "bytes": 275930,
+   "buildings": 15379,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c509_1280-9872ee3a0d4a5e32.bld.zip"
+  },
   "509_1281": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30858,6 +32354,14 @@
    "bytes": 926218,
    "buildings": 51706,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c509_1282-271178700cae890f.bld.zip"
+  },
+  "509_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2a653a8acacd4b1e",
+   "bytes": 308616,
+   "buildings": 16551,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c509_1283-2a653a8acacd4b1e.bld.zip"
   },
   "509_1284": {
    "release": "2026-10-21.0",
@@ -30882,6 +32386,14 @@
    "bytes": 20043,
    "buildings": 1051,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c510_1269-ed465107a49ae978.bld.zip"
+  },
+  "510_1274": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "78deeb0c197161c0",
+   "bytes": 88609,
+   "buildings": 4851,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c510_1274-78deeb0c197161c0.bld.zip"
   },
   "510_1275": {
    "release": "2026-10-21.0",
@@ -30931,6 +32443,14 @@
    "buildings": 19278,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c510_1280-f8eded24b384666c.bld.zip"
   },
+  "510_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "156a9ff181ac4466",
+   "bytes": 2140602,
+   "buildings": 118846,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c510_1281-156a9ff181ac4466.bld.zip"
+  },
   "510_1282": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -30946,6 +32466,22 @@
    "bytes": 891143,
    "buildings": 51368,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c510_1283-36293508463e1ee4.bld.zip"
+  },
+  "510_1284": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "bbf89dfb053df9ef",
+   "bytes": 71127,
+   "buildings": 3916,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c510_1284-bbf89dfb053df9ef.bld.zip"
+  },
+  "511_1272": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "fc1af044c1c24c94",
+   "bytes": 47499,
+   "buildings": 2651,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c511_1272-fc1af044c1c24c94.bld.zip"
   },
   "511_1273": {
    "release": "2026-10-21.0",
@@ -30987,6 +32523,14 @@
    "buildings": 76326,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c511_1277-acf7c8ceff6d5bc4.bld.zip"
   },
+  "511_1278": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "dbc0173e13d71c66",
+   "bytes": 7971,
+   "buildings": 274,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c511_1278-dbc0173e13d71c66.bld.zip"
+  },
   "511_1279": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31010,6 +32554,14 @@
    "bytes": 1746641,
    "buildings": 96429,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c511_1281-82675ac2726e84b7.bld.zip"
+  },
+  "511_1282": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "5bc9d4f02d08dde1",
+   "bytes": 1504139,
+   "buildings": 86157,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c511_1282-5bc9d4f02d08dde1.bld.zip"
   },
   "511_1283": {
    "release": "2026-10-21.0",
@@ -31059,6 +32611,14 @@
    "buildings": 72,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c512_1276-bf2de4de2e0c9947.bld.zip"
   },
+  "512_1277": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "b138df790ddc7ea8",
+   "bytes": 1144768,
+   "buildings": 60914,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c512_1277-b138df790ddc7ea8.bld.zip"
+  },
   "512_1278": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31075,6 +32635,14 @@
    "buildings": 7844,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c512_1279-31cf2117c3267cbc.bld.zip"
   },
+  "512_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "95ffc770df6d7b2a",
+   "bytes": 1461428,
+   "buildings": 82531,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c512_1280-95ffc770df6d7b2a.bld.zip"
+  },
   "512_1281": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31090,6 +32658,14 @@
    "bytes": 1040165,
    "buildings": 58112,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c512_1282-d34f3ec7669043ab.bld.zip"
+  },
+  "512_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6a578b5d31513136",
+   "bytes": 3780670,
+   "buildings": 215279,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c512_1283-6a578b5d31513136.bld.zip"
   },
   "512_1284": {
    "release": "2026-10-21.0",
@@ -31131,6 +32707,14 @@
    "buildings": 186,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c513_1276-7be5aefa63845437.bld.zip"
   },
+  "513_1277": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "30ee24fc3189859f",
+   "bytes": 54968,
+   "buildings": 3016,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c513_1277-30ee24fc3189859f.bld.zip"
+  },
   "513_1278": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31146,6 +32730,14 @@
    "bytes": 11737,
    "buildings": 482,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c513_1279-9e0cfdba5ea436dd.bld.zip"
+  },
+  "513_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "11ebf17e28ff259b",
+   "bytes": 499916,
+   "buildings": 27444,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c513_1280-11ebf17e28ff259b.bld.zip"
   },
   "513_1281": {
    "release": "2026-10-21.0",
@@ -31163,6 +32755,14 @@
    "buildings": 11601,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c513_1282-e9109c30d414936b.bld.zip"
   },
+  "513_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "af220ffbf3958f40",
+   "bytes": 4775350,
+   "buildings": 277670,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c513_1283-af220ffbf3958f40.bld.zip"
+  },
   "513_1284": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31178,6 +32778,14 @@
    "bytes": 1312631,
    "buildings": 69162,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c513_1285-b9b84b85d7389a76.bld.zip"
+  },
+  "513_1286": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0c7778589006fef7",
+   "bytes": 34064,
+   "buildings": 1733,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c513_1286-0c7778589006fef7.bld.zip"
   },
   "514_1278": {
    "release": "2026-10-21.0",
@@ -31211,6 +32819,14 @@
    "buildings": 36128,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c514_1281-2ee5b62046652d95.bld.zip"
   },
+  "514_1282": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "64a42d8d9fd69f00",
+   "bytes": 191085,
+   "buildings": 10142,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c514_1282-64a42d8d9fd69f00.bld.zip"
+  },
   "514_1283": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31226,6 +32842,14 @@
    "bytes": 2202893,
    "buildings": 119300,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c514_1284-1ade49da457575e0.bld.zip"
+  },
+  "514_1285": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "42117042969aae13",
+   "bytes": 806967,
+   "buildings": 41385,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c514_1285-42117042969aae13.bld.zip"
   },
   "514_1286": {
    "release": "2026-10-21.0",
@@ -31243,6 +32867,14 @@
    "buildings": 418,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c515_1278-84df1f9d1152501b.bld.zip"
   },
+  "515_1279": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "b889fcbbae14492f",
+   "bytes": 2141487,
+   "buildings": 122106,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c515_1279-b889fcbbae14492f.bld.zip"
+  },
   "515_1280": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31250,6 +32882,14 @@
    "bytes": 196497,
    "buildings": 10539,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c515_1280-a93232d9ca5067c2.bld.zip"
+  },
+  "515_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6728e74fc1df4cc2",
+   "bytes": 567027,
+   "buildings": 31259,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c515_1281-6728e74fc1df4cc2.bld.zip"
   },
   "515_1282": {
    "release": "2026-10-21.0",
@@ -31266,6 +32906,14 @@
    "bytes": 332087,
    "buildings": 16766,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c515_1283-87b936c0c4b6865d.bld.zip"
+  },
+  "515_1284": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c35538fbab9c522b",
+   "bytes": 1569410,
+   "buildings": 85216,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c515_1284-c35538fbab9c522b.bld.zip"
   },
   "515_1285": {
    "release": "2026-10-21.0",
@@ -31299,6 +32947,14 @@
    "buildings": 24680,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_63/c516_1279-805db7b506c9ced9.bld.zip"
   },
+  "516_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7aa3faa8eb8123b8",
+   "bytes": 174964,
+   "buildings": 9297,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c516_1280-7aa3faa8eb8123b8.bld.zip"
+  },
   "516_1281": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31315,6 +32971,14 @@
    "buildings": 28259,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c516_1282-aa60659b5352a68a.bld.zip"
   },
+  "516_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "83042de0f806085d",
+   "bytes": 50487,
+   "buildings": 2405,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c516_1283-83042de0f806085d.bld.zip"
+  },
   "516_1284": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31330,6 +32994,14 @@
    "bytes": 379533,
    "buildings": 20283,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c516_1285-c9e13d5f2c46e3d6.bld.zip"
+  },
+  "516_1286": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "4f9800df0c8bb3dd",
+   "bytes": 697963,
+   "buildings": 34930,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c516_1286-4f9800df0c8bb3dd.bld.zip"
   },
   "516_1287": {
    "release": "2026-10-21.0",
@@ -31355,6 +33027,14 @@
    "buildings": 48820,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c517_1280-b81e323eaf68790e.bld.zip"
   },
+  "517_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "e6632e04e3e59680",
+   "bytes": 1329140,
+   "buildings": 62307,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c517_1281-e6632e04e3e59680.bld.zip"
+  },
   "517_1282": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31370,6 +33050,14 @@
    "bytes": 168536,
    "buildings": 8867,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c517_1283-5e08b52b6850ce77.bld.zip"
+  },
+  "517_1284": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "ca2311f9d0f11a64",
+   "bytes": 2119595,
+   "buildings": 119796,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c517_1284-ca2311f9d0f11a64.bld.zip"
   },
   "517_1285": {
    "release": "2026-10-21.0",
@@ -31387,6 +33075,14 @@
    "buildings": 20003,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c517_1286-e7ee63557367802e.bld.zip"
   },
+  "517_1287": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7e811a30e2a20bc5",
+   "bytes": 524225,
+   "buildings": 28661,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c517_1287-7e811a30e2a20bc5.bld.zip"
+  },
   "517_1288": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31402,6 +33098,14 @@
    "bytes": 2634105,
    "buildings": 140049,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c518_1280-a0d9646c3c5e8819.bld.zip"
+  },
+  "518_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "5260db1b9854fed6",
+   "bytes": 484702,
+   "buildings": 23367,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c518_1281-5260db1b9854fed6.bld.zip"
   },
   "518_1282": {
    "release": "2026-10-21.0",
@@ -31419,6 +33123,14 @@
    "buildings": 13441,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c518_1283-7b3d55d6323815e7.bld.zip"
   },
+  "518_1284": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6b7507aa0b20a052",
+   "bytes": 3187361,
+   "buildings": 173603,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c518_1284-6b7507aa0b20a052.bld.zip"
+  },
   "518_1285": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31434,6 +33146,14 @@
    "bytes": 72845,
    "buildings": 3494,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c518_1286-46401d238b13fa9e.bld.zip"
+  },
+  "518_1287": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "8c27bfb6540f13b8",
+   "bytes": 526477,
+   "buildings": 29049,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c518_1287-8c27bfb6540f13b8.bld.zip"
   },
   "518_1288": {
    "release": "2026-10-21.0",
@@ -31467,6 +33187,14 @@
    "buildings": 72020,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c519_1280-8dea7092f12475e1.bld.zip"
   },
+  "519_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0e1639be1f8f73da",
+   "bytes": 40558,
+   "buildings": 1980,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c519_1281-0e1639be1f8f73da.bld.zip"
+  },
   "519_1282": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31483,6 +33211,14 @@
    "buildings": 3480,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c519_1283-963949cc3092e9c7.bld.zip"
   },
+  "519_1284": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "90f1bb9516fb2db9",
+   "bytes": 1259197,
+   "buildings": 69989,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c519_1284-90f1bb9516fb2db9.bld.zip"
+  },
   "519_1285": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31498,6 +33234,38 @@
    "bytes": 115762,
    "buildings": 6009,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c519_1286-68a6fb8e440e3bf3.bld.zip"
+  },
+  "519_1287": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "ab94b7fced718723",
+   "bytes": 215264,
+   "buildings": 11272,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b25_64/c519_1287-ab94b7fced718723.bld.zip"
+  },
+  "520_1278": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "dd74a46963f88cd3",
+   "bytes": 3012,
+   "buildings": 132,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_63/c520_1278-dd74a46963f88cd3.bld.zip"
+  },
+  "520_1279": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "18c526d95851068c",
+   "bytes": 207301,
+   "buildings": 12632,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_63/c520_1279-18c526d95851068c.bld.zip"
+  },
+  "520_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "883d47fbfb0bdda5",
+   "bytes": 1240762,
+   "buildings": 66567,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c520_1280-883d47fbfb0bdda5.bld.zip"
   },
   "520_1281": {
    "release": "2026-10-21.0",
@@ -31531,6 +33299,22 @@
    "buildings": 15746,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c520_1284-bd7035c7158dc197.bld.zip"
   },
+  "520_1285": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "b6274512bbf8e9b3",
+   "bytes": 424065,
+   "buildings": 23012,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c520_1285-b6274512bbf8e9b3.bld.zip"
+  },
+  "520_1286": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c4aa126287f0f919",
+   "bytes": 236251,
+   "buildings": 12695,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c520_1286-c4aa126287f0f919.bld.zip"
+  },
   "520_1287": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31538,6 +33322,14 @@
    "bytes": 450099,
    "buildings": 24293,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c520_1287-c3d0b5c6c583c985.bld.zip"
+  },
+  "521_1279": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2c41f3d983a5dc5f",
+   "bytes": 26405,
+   "buildings": 1370,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_63/c521_1279-2c41f3d983a5dc5f.bld.zip"
   },
   "521_1280": {
    "release": "2026-10-21.0",
@@ -31563,6 +33355,22 @@
    "buildings": 55860,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c521_1282-0027a67bfba21052.bld.zip"
   },
+  "521_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6785b4fea6649dc5",
+   "bytes": 276439,
+   "buildings": 14549,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c521_1283-6785b4fea6649dc5.bld.zip"
+  },
+  "521_1284": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "4d062f84126de35b",
+   "bytes": 414439,
+   "buildings": 22244,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c521_1284-4d062f84126de35b.bld.zip"
+  },
   "521_1285": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31587,6 +33395,14 @@
    "buildings": 6031,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c521_1287-f8028d5f5a350f61.bld.zip"
   },
+  "522_1279": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "268206a0f16e366e",
+   "bytes": 105988,
+   "buildings": 5768,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_63/c522_1279-268206a0f16e366e.bld.zip"
+  },
   "522_1280": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31594,6 +33410,22 @@
    "bytes": 48218,
    "buildings": 2408,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c522_1280-5e3a2da9e1d1d37d.bld.zip"
+  },
+  "522_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7f1aaa28732d49eb",
+   "bytes": 1902706,
+   "buildings": 110001,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c522_1281-7f1aaa28732d49eb.bld.zip"
+  },
+  "522_1282": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "90f1f6ae9120748f",
+   "bytes": 1704032,
+   "buildings": 98700,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c522_1282-90f1f6ae9120748f.bld.zip"
   },
   "522_1283": {
    "release": "2026-10-21.0",
@@ -31659,6 +33491,22 @@
    "buildings": 143018,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_21/c522_426-8ea81117cba3aa58.bld.zip"
   },
+  "523_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "65384b6b5dee8ae2",
+   "bytes": 16403,
+   "buildings": 776,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c523_1280-65384b6b5dee8ae2.bld.zip"
+  },
+  "523_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6bdbf8a5363d53ee",
+   "bytes": 1024729,
+   "buildings": 56514,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c523_1281-6bdbf8a5363d53ee.bld.zip"
+  },
   "523_1282": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31723,6 +33571,22 @@
    "buildings": 144179,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_21/c523_426-e5839d649283632a.bld.zip"
   },
+  "524_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "040e1228a597686c",
+   "bytes": 217347,
+   "buildings": 11452,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c524_1281-040e1228a597686c.bld.zip"
+  },
+  "524_1282": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "f44fe63c42e498bb",
+   "bytes": 102495,
+   "buildings": 5582,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c524_1282-f44fe63c42e498bb.bld.zip"
+  },
   "524_1283": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31771,6 +33635,22 @@
    "buildings": 7528,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c525_1280-44cee487adc866d5.bld.zip"
   },
+  "525_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2bb303b6fc119a0f",
+   "bytes": 56718,
+   "buildings": 2905,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c525_1281-2bb303b6fc119a0f.bld.zip"
+  },
+  "525_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "439e12cd9ff8ff86",
+   "bytes": 94759,
+   "buildings": 4834,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c525_1283-439e12cd9ff8ff86.bld.zip"
+  },
   "525_1284": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31803,6 +33683,14 @@
    "buildings": 16229,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_14/c525_297-83d73fd491439279.bld.zip"
   },
+  "526_1279": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "f241cc3c5eaf1d57",
+   "bytes": 30454,
+   "buildings": 1750,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_63/c526_1279-f241cc3c5eaf1d57.bld.zip"
+  },
   "526_1280": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31818,6 +33706,22 @@
    "bytes": 205068,
    "buildings": 11478,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c526_1281-5eb815e92ca54f14.bld.zip"
+  },
+  "526_1282": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "d1f5abd840d66ebf",
+   "bytes": 36533,
+   "buildings": 1878,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c526_1282-d1f5abd840d66ebf.bld.zip"
+  },
+  "526_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "47f2331559e1f026",
+   "bytes": 126662,
+   "buildings": 6693,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c526_1283-47f2331559e1f026.bld.zip"
   },
   "526_1284": {
    "release": "2026-10-21.0",
@@ -31851,6 +33755,22 @@
    "buildings": 106153,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c527_1282-28d6d45cd0b52a54.bld.zip"
   },
+  "527_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "3b198cab6ea1db8a",
+   "bytes": 1231373,
+   "buildings": 67383,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c527_1283-3b198cab6ea1db8a.bld.zip"
+  },
+  "527_1284": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "ada5f2037975ac08",
+   "bytes": 107534,
+   "buildings": 5869,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c527_1284-ada5f2037975ac08.bld.zip"
+  },
   "527_1292": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31867,6 +33787,30 @@
    "buildings": 0,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c527_1293-6fb53b48320f0902.bld.zip"
   },
+  "528_1277": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "413052d37dfb5bff",
+   "bytes": 26088,
+   "buildings": 1304,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_63/c528_1277-413052d37dfb5bff.bld.zip"
+  },
+  "528_1278": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "8f9b5789def6f6ee",
+   "bytes": 23224,
+   "buildings": 1242,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_63/c528_1278-8f9b5789def6f6ee.bld.zip"
+  },
+  "528_1279": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0e64598790479648",
+   "bytes": 55316,
+   "buildings": 3027,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_63/c528_1279-0e64598790479648.bld.zip"
+  },
   "528_1280": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31882,6 +33826,22 @@
    "bytes": 93455,
    "buildings": 4811,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c528_1281-00ccd85ba41bb74c.bld.zip"
+  },
+  "528_1282": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "62c9f90da6c0e30b",
+   "bytes": 246996,
+   "buildings": 14249,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c528_1282-62c9f90da6c0e30b.bld.zip"
+  },
+  "528_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "d622d0b5ab6f8cfa",
+   "bytes": 76798,
+   "buildings": 3846,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c528_1283-d622d0b5ab6f8cfa.bld.zip"
   },
   "528_1290": {
    "release": "2026-10-21.0",
@@ -31915,6 +33875,38 @@
    "buildings": 1593,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c528_1293-aaff60c566e3d1cb.bld.zip"
   },
+  "529_1278": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "5bb9ec9e3680fe4f",
+   "bytes": 548,
+   "buildings": 8,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_63/c529_1278-5bb9ec9e3680fe4f.bld.zip"
+  },
+  "529_1279": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0355cf959c0d31b6",
+   "bytes": 195267,
+   "buildings": 10524,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_63/c529_1279-0355cf959c0d31b6.bld.zip"
+  },
+  "529_1280": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0e51c398f0fe2ef5",
+   "bytes": 118510,
+   "buildings": 6436,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c529_1280-0e51c398f0fe2ef5.bld.zip"
+  },
+  "529_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0b582948b68cb8b9",
+   "bytes": 156211,
+   "buildings": 8406,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c529_1281-0b582948b68cb8b9.bld.zip"
+  },
   "529_1283": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31947,6 +33939,22 @@
    "buildings": 6717,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c529_1288-e4a9ad29d85a9e68.bld.zip"
   },
+  "529_1289": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c18d8c5e11f62243",
+   "bytes": 452516,
+   "buildings": 23495,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c529_1289-c18d8c5e11f62243.bld.zip"
+  },
+  "529_1290": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7b113ed83fcfda1e",
+   "bytes": 116523,
+   "buildings": 5847,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c529_1290-7b113ed83fcfda1e.bld.zip"
+  },
   "529_1291": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31971,6 +33979,14 @@
    "buildings": 12723,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c529_1293-6b9a4a225e9cb742.bld.zip"
   },
+  "530_1279": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6286e68529c23c9a",
+   "bytes": 18189,
+   "buildings": 844,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_63/c530_1279-6286e68529c23c9a.bld.zip"
+  },
   "530_1280": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -31978,6 +33994,22 @@
    "bytes": 32000,
    "buildings": 1557,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c530_1280-e76ce5ee0af893de.bld.zip"
+  },
+  "530_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "eca5cab404372f17",
+   "bytes": 154730,
+   "buildings": 8277,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c530_1281-eca5cab404372f17.bld.zip"
+  },
+  "530_1282": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "3c2dd8071ce1d35f",
+   "bytes": 104779,
+   "buildings": 5305,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c530_1282-3c2dd8071ce1d35f.bld.zip"
   },
   "530_1283": {
    "release": "2026-10-21.0",
@@ -32011,6 +34043,22 @@
    "buildings": 72495,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c530_1286-06258b20c3cd7c01.bld.zip"
   },
+  "530_1287": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "db4c1479bb4da0da",
+   "bytes": 362647,
+   "buildings": 19863,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c530_1287-db4c1479bb4da0da.bld.zip"
+  },
+  "530_1288": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "61efdb4d9abb8cf3",
+   "bytes": 333553,
+   "buildings": 17877,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c530_1288-61efdb4d9abb8cf3.bld.zip"
+  },
   "530_1289": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32042,6 +34090,22 @@
    "bytes": 262318,
    "buildings": 13874,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c530_1292-a63fd965f21275b3.bld.zip"
+  },
+  "530_1293": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "ca2f079952052d72",
+   "bytes": 113167,
+   "buildings": 5678,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c530_1293-ca2f079952052d72.bld.zip"
+  },
+  "530_1294": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "8116806380dd6b34",
+   "bytes": 28604,
+   "buildings": 1443,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c530_1294-8116806380dd6b34.bld.zip"
   },
   "530_1295": {
    "release": "2026-10-21.0",
@@ -32075,6 +34139,22 @@
    "buildings": 26598,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c531_1282-00a325538d6eda3e.bld.zip"
   },
+  "531_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "d9fef4830fa99e07",
+   "bytes": 254947,
+   "buildings": 14155,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c531_1283-d9fef4830fa99e07.bld.zip"
+  },
+  "531_1284": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "5eb6c565d9663118",
+   "bytes": 32231,
+   "buildings": 1506,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c531_1284-5eb6c565d9663118.bld.zip"
+  },
   "531_1285": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32107,6 +34187,22 @@
    "buildings": 7101,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c531_1288-95c3eb2fc05db928.bld.zip"
   },
+  "531_1289": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "4d3244232f3ac421",
+   "bytes": 58195,
+   "buildings": 2926,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c531_1289-4d3244232f3ac421.bld.zip"
+  },
+  "531_1290": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2b2cab07f5b7bd8b",
+   "bytes": 8506,
+   "buildings": 362,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c531_1290-2b2cab07f5b7bd8b.bld.zip"
+  },
   "531_1291": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32138,6 +34234,22 @@
    "bytes": 153365,
    "buildings": 8376,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c531_1294-bb5a5f8c91afdec1.bld.zip"
+  },
+  "531_1295": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c5a2575a1665c284",
+   "bytes": 63726,
+   "buildings": 3256,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c531_1295-c5a2575a1665c284.bld.zip"
+  },
+  "531_1296": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "e2ccbe6fd105ea27",
+   "bytes": 141118,
+   "buildings": 7665,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c531_1296-e2ccbe6fd105ea27.bld.zip"
   },
   "531_1297": {
    "release": "2026-10-21.0",
@@ -32195,6 +34307,22 @@
    "buildings": 2045,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c532_1281-7c927501cec7cac5.bld.zip"
   },
+  "532_1282": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7e2589872951523a",
+   "bytes": 132156,
+   "buildings": 6394,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c532_1282-7e2589872951523a.bld.zip"
+  },
+  "532_1283": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "cf7d6e8e07d08217",
+   "bytes": 859308,
+   "buildings": 49243,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c532_1283-cf7d6e8e07d08217.bld.zip"
+  },
   "532_1284": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32227,6 +34355,22 @@
    "buildings": 59877,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c532_1287-3408544fbfac1053.bld.zip"
   },
+  "532_1288": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "cffd3c3851348ecc",
+   "bytes": 21615,
+   "buildings": 1149,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c532_1288-cffd3c3851348ecc.bld.zip"
+  },
+  "532_1289": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "afeca9e57d444a94",
+   "bytes": 102215,
+   "buildings": 5399,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c532_1289-afeca9e57d444a94.bld.zip"
+  },
   "532_1290": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32258,6 +34402,22 @@
    "bytes": 215641,
    "buildings": 11446,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c532_1293-ae1d8bddbf754e36.bld.zip"
+  },
+  "532_1294": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "f05a89997f016058",
+   "bytes": 264155,
+   "buildings": 14576,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c532_1294-f05a89997f016058.bld.zip"
+  },
+  "532_1295": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "7b2659aa70cf7eec",
+   "bytes": 14556,
+   "buildings": 525,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c532_1295-7b2659aa70cf7eec.bld.zip"
   },
   "532_1296": {
    "release": "2026-10-21.0",
@@ -32315,6 +34475,22 @@
    "buildings": 1215,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_65/c532_1302-d19e04ebcce65edd.bld.zip"
   },
+  "533_1281": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "52968d6d6c390542",
+   "bytes": 24576,
+   "buildings": 1244,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c533_1281-52968d6d6c390542.bld.zip"
+  },
+  "533_1282": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "b0df841c93fc70b6",
+   "bytes": 75704,
+   "buildings": 4084,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c533_1282-b0df841c93fc70b6.bld.zip"
+  },
   "533_1285": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32347,6 +34523,22 @@
    "buildings": 6318,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c533_1288-fea6799fe74a27ef.bld.zip"
   },
+  "533_1289": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "8923f92baebbdbd1",
+   "bytes": 624265,
+   "buildings": 34985,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c533_1289-8923f92baebbdbd1.bld.zip"
+  },
+  "533_1290": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "07aa76110995c93c",
+   "bytes": 58579,
+   "buildings": 2809,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c533_1290-07aa76110995c93c.bld.zip"
+  },
   "533_1291": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32378,6 +34570,22 @@
    "bytes": 128075,
    "buildings": 6546,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c533_1294-9f08746433888e71.bld.zip"
+  },
+  "533_1295": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "4709557630351bda",
+   "bytes": 22379,
+   "buildings": 1001,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c533_1295-4709557630351bda.bld.zip"
+  },
+  "533_1296": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "fcff544eecb21734",
+   "bytes": 11484,
+   "buildings": 510,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c533_1296-fcff544eecb21734.bld.zip"
   },
   "533_1297": {
    "release": "2026-10-21.0",
@@ -32443,6 +34651,22 @@
    "buildings": 2850,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c534_1285-f663250904c120f2.bld.zip"
   },
+  "534_1286": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6b3c6c9832341574",
+   "bytes": 6189,
+   "buildings": 235,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c534_1286-6b3c6c9832341574.bld.zip"
+  },
+  "534_1287": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "1d071ac085f16cf8",
+   "bytes": 889355,
+   "buildings": 52152,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c534_1287-1d071ac085f16cf8.bld.zip"
+  },
   "534_1288": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32475,6 +34699,22 @@
    "buildings": 145,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c534_1291-09e9a8d0c45f3fe7.bld.zip"
   },
+  "534_1292": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "1f98af6ed2bda582",
+   "bytes": 3887,
+   "buildings": 141,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c534_1292-1f98af6ed2bda582.bld.zip"
+  },
+  "534_1293": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "49ff46f945056ea8",
+   "bytes": 17469,
+   "buildings": 724,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c534_1293-49ff46f945056ea8.bld.zip"
+  },
   "534_1294": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32506,6 +34746,22 @@
    "bytes": 76101,
    "buildings": 3669,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c534_1297-4cd0bebdcdc27df1.bld.zip"
+  },
+  "534_1298": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "f2caa9e62b320b47",
+   "bytes": 18680,
+   "buildings": 777,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c534_1298-f2caa9e62b320b47.bld.zip"
+  },
+  "534_1299": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "2c444daaa688e542",
+   "bytes": 268025,
+   "buildings": 14289,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c534_1299-2c444daaa688e542.bld.zip"
   },
   "534_1300": {
    "release": "2026-10-21.0",
@@ -32563,6 +34819,22 @@
    "buildings": 2147,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c535_1288-ca36f38577dc97dc.bld.zip"
   },
+  "535_1289": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "a02739fe9acfab71",
+   "bytes": 2849736,
+   "buildings": 165270,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c535_1289-a02739fe9acfab71.bld.zip"
+  },
+  "535_1290": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "0e614f7420636844",
+   "bytes": 247161,
+   "buildings": 13318,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c535_1290-0e614f7420636844.bld.zip"
+  },
   "535_1291": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32594,6 +34866,22 @@
    "bytes": 252991,
    "buildings": 13363,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c535_1294-9d820c145dcc2c44.bld.zip"
+  },
+  "535_1295": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "ade17055939bdc65",
+   "bytes": 1039992,
+   "buildings": 59949,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c535_1295-ade17055939bdc65.bld.zip"
+  },
+  "535_1296": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "256fd4c3f5121517",
+   "bytes": 498110,
+   "buildings": 27268,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c535_1296-256fd4c3f5121517.bld.zip"
   },
   "535_1297": {
    "release": "2026-10-21.0",
@@ -32651,6 +34939,22 @@
    "buildings": 3367,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c536_1286-196f4acbb7f8dda7.bld.zip"
   },
+  "536_1287": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "39ce62a7b3709e99",
+   "bytes": 22718,
+   "buildings": 988,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c536_1287-39ce62a7b3709e99.bld.zip"
+  },
+  "536_1288": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "aa6addc58e49edcb",
+   "bytes": 30333,
+   "buildings": 1543,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c536_1288-aa6addc58e49edcb.bld.zip"
+  },
   "536_1289": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32682,6 +34986,22 @@
    "bytes": 80641,
    "buildings": 4057,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c536_1292-082091c563970195.bld.zip"
+  },
+  "536_1293": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "619a0771dee8d94a",
+   "bytes": 69987,
+   "buildings": 3512,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c536_1293-619a0771dee8d94a.bld.zip"
+  },
+  "536_1294": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "17cf9c739700a940",
+   "bytes": 430986,
+   "buildings": 23855,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c536_1294-17cf9c739700a940.bld.zip"
   },
   "536_1295": {
    "release": "2026-10-21.0",
@@ -32771,6 +35091,22 @@
    "buildings": 3370,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_22/c536_445-218df40bae0c8a92.bld.zip"
   },
+  "537_1285": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "8f47bc0159ad8d91",
+   "bytes": 20863,
+   "buildings": 1082,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c537_1285-8f47bc0159ad8d91.bld.zip"
+  },
+  "537_1286": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "c8380ea59a620d06",
+   "bytes": 179328,
+   "buildings": 9992,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c537_1286-c8380ea59a620d06.bld.zip"
+  },
   "537_1287": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32802,6 +35138,22 @@
    "bytes": 114012,
    "buildings": 5918,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c537_1290-88b35eb9f9bd4bea.bld.zip"
+  },
+  "537_1291": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "5bec4cbb23da812a",
+   "bytes": 25767,
+   "buildings": 1214,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c537_1291-5bec4cbb23da812a.bld.zip"
+  },
+  "537_1292": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "270a78db19bfa785",
+   "bytes": 95415,
+   "buildings": 4608,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c537_1292-270a78db19bfa785.bld.zip"
   },
   "537_1293": {
    "release": "2026-10-21.0",
@@ -32867,6 +35219,22 @@
    "buildings": 646,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c538_1288-5bbfb8b08d54e02f.bld.zip"
   },
+  "538_1289": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "b10b4bf685b036ed",
+   "bytes": 50445,
+   "buildings": 2476,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c538_1289-b10b4bf685b036ed.bld.zip"
+  },
+  "538_1290": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "44a026b8ac2f478a",
+   "bytes": 12851,
+   "buildings": 520,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c538_1290-44a026b8ac2f478a.bld.zip"
+  },
   "538_1291": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -32898,6 +35266,22 @@
    "bytes": 75475,
    "buildings": 3634,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c539_1287-b7c8831005a0fd53.bld.zip"
+  },
+  "539_1288": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "1203abcfc0fdab96",
+   "bytes": 66819,
+   "buildings": 3309,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c539_1288-1203abcfc0fdab96.bld.zip"
+  },
+  "539_1289": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "36769110b2fd737e",
+   "bytes": 63966,
+   "buildings": 3295,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b26_64/c539_1289-36769110b2fd737e.bld.zip"
   },
   "539_1290": {
    "release": "2026-10-21.0",
@@ -33139,6 +35523,30 @@
    "buildings": 7144,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b27_37/c545_759-4ce3199668a98dcc.bld.zip"
   },
+  "545_760": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "6e180cbad6a3ebb8",
+   "bytes": 130922,
+   "buildings": 6100,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b27_38/c545_760-6e180cbad6a3ebb8.bld.zip"
+  },
+  "545_761": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "330c7e2ca8de935f",
+   "bytes": 297530,
+   "buildings": 14325,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b27_38/c545_761-330c7e2ca8de935f.bld.zip"
+  },
+  "545_762": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "a5e224e28c5184e3",
+   "bytes": 110201,
+   "buildings": 4906,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b27_38/c545_762-a5e224e28c5184e3.bld.zip"
+  },
   "546_750": {
    "release": "2026-10-21.0",
    "classes": "b8bcff9a5ba3",
@@ -33178,6 +35586,30 @@
    "bytes": 138983,
    "buildings": 5559,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b27_37/c546_759-567e400e8125f1bf.bld.zip"
+  },
+  "546_760": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "59facf0acf747f71",
+   "bytes": 71842,
+   "buildings": 3063,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b27_38/c546_760-59facf0acf747f71.bld.zip"
+  },
+  "546_761": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "d43ed687fcad9cf6",
+   "bytes": 72957,
+   "buildings": 2933,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b27_38/c546_761-d43ed687fcad9cf6.bld.zip"
+  },
+  "546_762": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "b60780928ed3de97",
+   "bytes": 206724,
+   "buildings": 9747,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b27_38/c546_762-b60780928ed3de97.bld.zip"
   },
   "547_745": {
    "release": "2026-10-21.0",
@@ -33274,6 +35706,14 @@
    "bytes": 1558938,
    "buildings": 68434,
    "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b27_37/c548_753-48d1f000d00c0825.bld.zip"
+  },
+  "550_764": {
+   "release": "2026-10-21.0",
+   "classes": "b8bcff9a5ba3",
+   "hash": "bdfee7ac6a306d85",
+   "bytes": 595465,
+   "buildings": 30187,
+   "url": "https://github.com/Beenster99/torque-shed-world/releases/download/bld-2026-10-21.0-b27_38/c550_764-bdfee7ac6a306d85.bld.zip"
   },
   "559_694": {
    "release": "2026-10-21.0",
