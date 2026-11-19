@@ -8,6 +8,10 @@ name: Map the race circuits
 on:
   workflow_dispatch:
     inputs:
+      source:
+        description: "overpass (the Overpass API: quick, just the circuits) or extracts (Geofabrik's whole extracts)"
+        required: false
+        default: overpass
       extracts:
         description: "The OpenStreetMap extracts, space separated"
         required: false
@@ -28,7 +32,49 @@ jobs:
       - run: |
           sudo apt-get update -q && sudo apt-get install -y -q osmium-tool
           pip install osmium
+      - name: Ask the Overpass API
+        if: inputs.source == 'overpass'
+        run: |
+          mkdir -p over
+          BOX="49.8,-8.8,61.0,2.0"
+          cat > core.q <<EOF
+          [out:json][timeout:900];
+          (
+            way["highway"="raceway"]($BOX);
+            way["area:highway"="raceway"]($BOX);
+            way["leisure"~"^(track|motor_racing)$"]["sport"]($BOX);
+            relation["leisure"~"^(track|motor_racing)$"]["sport"]($BOX);
+            way["landuse"~"^(raceway|motor_racing)$"]($BOX);
+            relation["landuse"~"^(raceway|motor_racing)$"]($BOX);
+            way["building"="grandstand"]($BOX);
+            way["leisure"="grandstand"]($BOX);
+          );
+          out body geom;
+          EOF
+          cat > more.q <<EOF
+          [out:json][timeout:900];
+          way["highway"="raceway"]($BOX)->.r;
+          (
+            way["surface"~"^(gravel|sand|asphalt|paved|concrete)$"]["highway"!~"."](around.r:400);
+            way["natural"~"^(sand|shingle)$"](around.r:400);
+            way["landuse"~"^(grass|gravel_trap)$"](around.r:400);
+            relation["natural"~"^(sand|shingle)$"](around.r:400);
+          );
+          out body geom;
+          EOF
+          for q in core more; do
+            ok=0
+            for url in https://overpass-api.de/api/interpreter https://overpass.kumi.systems/api/interpreter https://overpass.private.coffee/api/interpreter; do
+              for attempt in 1 2 3; do
+                if curl -sSf --max-time 1000 --data-urlencode "data@$q.q" -o "over/$q.json" "$url" && python3 -c "import json,sys; d=json.load(open('over/$q.json')); sys.exit(0 if d.get('elements') else 1)"; then ok=1; break 2; fi
+                sleep 30
+              done
+            done
+            [ $ok = 1 ] || exit 1
+            ls -l "over/$q.json"
+          done
       - name: Download the extracts
+        if: inputs.source != 'overpass'
         env:
           EXTRACTS: ${{ inputs.extracts }}
         run: |
@@ -40,6 +86,7 @@ jobs:
           done
           ls -l pbf
       - name: Keep only what a circuit needs
+        if: inputs.source != 'overpass'
         run: |
           mkdir -p cut
           for f in pbf/*.osm.pbf; do
@@ -56,7 +103,11 @@ jobs:
       - name: Bake the circuits
         run: |
           DATE=$(date -u +%Y-%m-%d)
-          python3 scripts/circuit_bake.py cut/*.core.osm.pbf --more cut/*.more.osm.pbf --out entries --osm-date "$DATE" --list circuit_list.json | tee bake.log
+          if [ -d over ]; then
+            python3 scripts/circuit_bake.py over/core.json --more over/more.json --out entries --osm-date "$DATE" --list circuit_list.json | tee bake.log
+          else
+            python3 scripts/circuit_bake.py cut/*.core.osm.pbf --more cut/*.more.osm.pbf --out entries --osm-date "$DATE" --list circuit_list.json | tee bake.log
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: circuits

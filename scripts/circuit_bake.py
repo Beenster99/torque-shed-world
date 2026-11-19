@@ -171,6 +171,46 @@ def collect(paths, boxes=None):
     return ways, areas
 
 
+def collect_overpass(paths, boxes=None):
+    """As collect, from Overpass API answers (JSON, "out body geom": ways with their nodes and geometry,
+    multipolygon relations with their members' geometry)."""
+    ways, areas = [], []
+    for p in paths:
+        with open(p, encoding="utf-8") as f:
+            data = json.load(f)
+        for el in data.get("elements", []):
+            tags = el.get("tags") or {}
+            if el.get("type") == "way":
+                geom = [(g["lat"], g["lon"]) for g in el.get("geometry") or [] if g]
+                if len(geom) < 2:
+                    continue
+                kind = way_kind(tags) if boxes is None else None
+                if kind is not None:
+                    nodes = el.get("nodes") or [None, None]
+                    oneway = {"yes": 1, "true": 1, "1": 1, "-1": -1, "reverse": -1}.get(tags.get("oneway", ""), 0)
+                    ways.append({"id": el["id"], "kind": kind, "tags": tags, "pts": geom, "width": width_of(tags), "oneway": oneway,
+                                 "name": tags.get("name", ""), "ends": (nodes[0], nodes[-1])})
+                akind = area_kind(tags)
+                if akind is not None and geom[0] == geom[-1] and len(geom) >= 4:
+                    if boxes is not None and (int(math.floor(geom[0][0] * 100)), int(math.floor(geom[0][1] * 60))) not in boxes:
+                        continue
+                    areas.append({"id": el["id"] * 2, "kind": akind, "name": tags.get("name", ""), "pts": geom, "tags": tags})
+            elif el.get("type") == "relation" and tags.get("type") == "multipolygon":
+                akind = area_kind(tags)
+                if akind is None:
+                    continue
+                for m in el.get("members") or []:
+                    if m.get("role") != "outer" or not m.get("geometry"):
+                        continue
+                    geom = [(g["lat"], g["lon"]) for g in m["geometry"] if g]
+                    if len(geom) >= 4:
+                        if boxes is not None and (int(math.floor(geom[0][0] * 100)), int(math.floor(geom[0][1] * 60))) not in boxes:
+                            continue
+                        areas.append({"id": el["id"] * 2 + 1, "kind": akind, "name": tags.get("name", ""), "pts": geom, "tags": tags})
+                        break
+    return ways, areas
+
+
 def group(ways, areas):
     """The circuits: raceway ways joined where they share an end or their ends are within JOIN_M, or lie in the same
     circuit outline. Returns a list of circuits, each {id, ways, areas, name, kind, lat, lon, length}."""
@@ -396,7 +436,7 @@ def closes(ws):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("pbf", nargs="+")
+    ap.add_argument("pbf", nargs="+", help="extracts (.osm.pbf, .osm) or Overpass API answers (.json)")
     ap.add_argument("--more", nargs="*", default=[], help="extracts of the run-off kinds (gravel, sand, grass, parking): only near circuits")
     ap.add_argument("--out", required=True)
     ap.add_argument("--release", default="")
@@ -408,10 +448,11 @@ def main(argv=None):
         with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "index.json")) as f:
             args.release = json.load(f)["release"]
     s, w, n, e = (float(v) for v in args.box.split(","))
-    ways, areas = collect(args.pbf)
+    over = all(p.endswith(".json") for p in args.pbf)
+    ways, areas = (collect_overpass if over else collect)(args.pbf)
     circuits = [c for c in group(ways, areas) if s <= c["lat"] <= n and w <= c["lon"] <= e]
     if args.more:
-        _, more = collect(args.more, boxes_of(circuits))
+        _, more = (collect_overpass if all(p.endswith(".json") for p in args.more) else collect)(args.more, boxes_of(circuits))
         more = [a for a in more if a["kind"] not in ("outline",)]
         assign(circuits, more)
     cells = bake(circuits, args.release, args.osm_date)
