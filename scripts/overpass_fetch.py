@@ -29,7 +29,7 @@ CORE = """[out:json][timeout:600];
 );
 out body geom;
 """
-MORE = """[out:json][timeout:400];
+MORE = """[out:json][timeout:90];
 way["highway"="raceway"]({b})->.r;
 (
   way["surface"~"^(gravel|sand|fine_gravel|pebblestone)$"]["highway"!~"."](around.r:200);
@@ -40,14 +40,14 @@ out body geom;
 """
 
 
-def ask(query, must=True):
+def ask(query, must=True, wait=700):
     data = urllib.parse.urlencode({"data": query}).encode()
     last = None
     for attempt in range(3 if must else 1):
         for url in MIRRORS:
             try:
                 req = urllib.request.Request(url, data=data, headers={"User-Agent": AGENT, "Accept": "application/json, */*"})
-                with urllib.request.urlopen(req, timeout=700) as r:
+                with urllib.request.urlopen(req, timeout=wait) as r:
                     body = json.loads(r.read().decode("utf-8"))
                 if "elements" in body and not body.get("remark", "").lower().startswith("runtime error"):
                     return body["elements"]
@@ -68,6 +68,7 @@ def main():
     ap.add_argument("--box", default="49.8,-8.8,61.0,2.0")
     ap.add_argument("--tile", type=float, default=2.0)
     ap.add_argument("--more-tile", type=float, default=0.25)
+    ap.add_argument("--more-minutes", type=float, default=30)
     ap.add_argument("--out", default="over")
     a = ap.parse_args()
     s, w, n, e = (float(v) for v in a.box.split(","))
@@ -80,11 +81,15 @@ def main():
             tiles.append((lat, lon, min(lat + a.tile, n), min(lon + a.tile, e)))
             lon += a.tile
         lat += a.tile
-    def run(name, q, boxes, must):
+    def run(name, q, boxes, must, budget=None):
         seen, out = set(), []
+        began = time.time()
         for t in boxes:
             b = "%.4f,%.4f,%.4f,%.4f" % t
-            got = ask(q.format(b=b), must=must)
+            if budget and time.time() - began > budget:
+                print("%s %s: left out (out of time)" % (name, b), flush=True)
+                continue
+            got = ask(q.format(b=b), must=must) if must else ask(q.format(b=b), must=False, wait=120)
             new = 0
             for el in got:
                 k = (el.get("type"), el.get("id"))
@@ -108,7 +113,8 @@ def main():
             squares.add((int(g["lat"] // a.more_tile), int(g["lon"] // a.more_tile)))
     boxes = [(r * a.more_tile, c * a.more_tile, (r + 1) * a.more_tile, (c + 1) * a.more_tile) for r, c in sorted(squares)]
     print("run-off: %d squares with raceways" % len(boxes), flush=True)
-    run("more", MORE, boxes, False)
+    # (at most --more-minutes for it all, each square asked for two minutes a mirror: run-off is a nicety)
+    run("more", MORE, boxes, False, budget=a.more_minutes * 60)
     return 0
 
 
