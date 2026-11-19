@@ -1,0 +1,84 @@
+name: Map the race circuits
+
+# [race tracks stage 1] The UK's race circuits from OpenStreetMap (scripts/circuit_bake.py): every highway=raceway way
+# (track, pit lane, layouts), the run-off round it, the circuit's outline and its grandstands, into circuit/cROW_COL.json
+# and the index's "circuits", with the circuit table in circuit/list.json. Geofabrik's United Kingdom extract has
+# Northern Ireland; the Isle of Man is its own. Run it from the Actions tab; it reads the extracts whole (a few minutes).
+
+on:
+  workflow_dispatch:
+    inputs:
+      extracts:
+        description: "The OpenStreetMap extracts, space separated"
+        required: false
+        default: "https://download.geofabrik.de/europe/united-kingdom-latest.osm.pbf https://download.geofabrik.de/europe/isle-of-man-latest.osm.pbf"
+
+permissions:
+  contents: write
+
+jobs:
+  circuits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          sudo apt-get update -q && sudo apt-get install -y -q osmium-tool
+          pip install osmium
+      - name: Download the extracts
+        env:
+          EXTRACTS: ${{ inputs.extracts }}
+        run: |
+          mkdir -p pbf
+          n=0
+          for url in $EXTRACTS; do
+            n=$((n + 1))
+            curl -sSfL --retry 8 --retry-delay 30 --retry-all-errors -o "pbf/x$n.osm.pbf" "$url"
+          done
+          ls -l pbf
+      - name: Keep only what a circuit needs
+        run: |
+          mkdir -p cut
+          for f in pbf/*.osm.pbf; do
+            b=$(basename "$f" .osm.pbf)
+            osmium tags-filter --overwrite -o "cut/$b.core.osm.pbf" "$f" \
+              w/highway=raceway wr/area:highway=raceway \
+              wr/leisure=track,motor_racing,grandstand wr/landuse=raceway,motor_racing,gravel_trap \
+              wr/sport=motor,motorsport,motorcycle,motorcycle_racing,motor_racing,karting,superbike,motocross,autocross,rallycross,autograss \
+              wr/building=grandstand
+            osmium tags-filter --overwrite -o "cut/$b.more.osm.pbf" "$f" \
+              wr/surface=gravel,sand,asphalt,paved,concrete wr/natural=sand,shingle wr/landuse=grass
+          done
+          ls -l cut
+      - name: Bake the circuits
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          python3 scripts/circuit_bake.py cut/*.core.osm.pbf --more cut/*.more.osm.pbf --out entries --osm-date "$DATE" --list circuit_list.json | tee bake.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: circuits
+          path: |
+            entries/
+            circuit_list.json
+            bake.log
+          retention-days: 7
+      - name: Add the circuits to the index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            git fetch origin main && git reset --hard origin/main
+            python3 scripts/index.py entries
+            mkdir -p circuit
+            cp circuit_list.json circuit/list.json
+            cp bake.log circuit/bake.log
+            git add index.json circuit
+            git diff --cached --quiet && exit 0
+            git commit -m "Race circuits from OpenStreetMap (run ${GITHUB_RUN_ID})"
+            git push origin HEAD:main && exit 0
+            sleep $((attempt * 5))
+          done
+          exit 1
