@@ -12,6 +12,10 @@ on:
         description: "overpass (the Overpass API: quick, just the circuits) or extracts (Geofabrik's whole extracts)"
         required: false
         default: overpass
+      box:
+        description: "overpass only: the area asked for, south,west,north,east (the UK and the Isle of Man by default; a smaller box for a quick look)"
+        required: false
+        default: "49.8,-8.8,61.0,2.0"
       extracts:
         description: "The OpenStreetMap extracts, space separated"
         required: false
@@ -34,9 +38,10 @@ jobs:
           pip install osmium
       - name: Ask the Overpass API
         if: inputs.source == 'overpass'
+        env:
+          BOX: ${{ inputs.box }}
         run: |
           mkdir -p over
-          BOX="49.8,-8.8,61.0,2.0"
           cat > core.q <<EOF
           [out:json][timeout:900];
           (
