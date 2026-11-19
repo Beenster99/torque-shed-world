@@ -29,22 +29,21 @@ CORE = """[out:json][timeout:600];
 );
 out body geom;
 """
-MORE = """[out:json][timeout:600];
+MORE = """[out:json][timeout:400];
 way["highway"="raceway"]({b})->.r;
 (
-  way["surface"~"^(gravel|sand|asphalt|paved|concrete)$"]["highway"!~"."](around.r:400);
-  way["natural"~"^(sand|shingle)$"](around.r:400);
-  way["landuse"~"^(grass|gravel_trap)$"](around.r:400);
-  relation["natural"~"^(sand|shingle)$"](around.r:400);
+  way["surface"~"^(gravel|sand|fine_gravel|pebblestone)$"]["highway"!~"."](around.r:200);
+  way["natural"~"^(sand|shingle)$"](around.r:200);
+  way["landuse"="gravel_trap"](around.r:200);
 );
 out body geom;
 """
 
 
-def ask(query):
+def ask(query, must=True):
     data = urllib.parse.urlencode({"data": query}).encode()
     last = None
-    for attempt in range(3):
+    for attempt in range(3 if must else 1):
         for url in MIRRORS:
             try:
                 req = urllib.request.Request(url, data=data, headers={"User-Agent": AGENT, "Accept": "application/json, */*"})
@@ -58,13 +57,17 @@ def ask(query):
             print("  (%s)" % last, flush=True)
             time.sleep(10)
         time.sleep(30 * (attempt + 1))
-    raise SystemExit("Overpass: no answer (%s)" % last)
+    if must:
+        raise SystemExit("Overpass: no answer (%s)" % last)
+    print("  (left out: %s)" % last, flush=True)
+    return []
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--box", default="49.8,-8.8,61.0,2.0")
     ap.add_argument("--tile", type=float, default=2.0)
+    ap.add_argument("--more-tile", type=float, default=0.25)
     ap.add_argument("--out", default="over")
     a = ap.parse_args()
     s, w, n, e = (float(v) for v in a.box.split(","))
@@ -77,11 +80,11 @@ def main():
             tiles.append((lat, lon, min(lat + a.tile, n), min(lon + a.tile, e)))
             lon += a.tile
         lat += a.tile
-    for name, q in (("core", CORE), ("more", MORE)):
+    def run(name, q, boxes, must):
         seen, out = set(), []
-        for t in tiles:
+        for t in boxes:
             b = "%.4f,%.4f,%.4f,%.4f" % t
-            got = ask(q.format(b=b))
+            got = ask(q.format(b=b), must=must)
             new = 0
             for el in got:
                 k = (el.get("type"), el.get("id"))
@@ -94,6 +97,18 @@ def main():
         with open(os.path.join(a.out, name + ".json"), "w") as f:
             json.dump({"elements": out}, f)
         print("%s: %d elements in all" % (name, len(out)), flush=True)
+        return out
+    core = run("core", CORE, tiles, True)
+    # (the run-off only round the raceways found: a small box, a.more_tile degrees, for each square that has one)
+    squares = set()
+    for el in core:
+        if el.get("type") != "way" or el.get("tags", {}).get("highway") != "raceway":
+            continue
+        for g in el.get("geometry", []):
+            squares.add((int(g["lat"] // a.more_tile), int(g["lon"] // a.more_tile)))
+    boxes = [(r * a.more_tile, c * a.more_tile, (r + 1) * a.more_tile, (c + 1) * a.more_tile) for r, c in sorted(squares)]
+    print("run-off: %d squares with raceways" % len(boxes), flush=True)
+    run("more", MORE, boxes, False)
     return 0
 
 
