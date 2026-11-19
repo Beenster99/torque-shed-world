@@ -1,0 +1,32 @@
+Brands Hatch                       track   4086 m  ways  27  pit  560 m  closed True   gravel  0  stands  5  cell 565_721
+Cadwell Park                       track   3626 m  ways  19  pit  336 m  closed False  gravel  0  stands  1  cell 573_719
+Brands Hatch                       dirt    2062 m  ways  19  pit    0 m  closed True   gravel  0  stands  0  cell 565_721
+(no name)                          dirt    2025 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 565_720
+(no name)                          dirt    1678 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 569_720
+Stansted Raceway                   kart     785 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_721
+Rye House Kart Circuit             kart     777 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 567_720
+(no name)                          kart     752 m  ways   5  pit    0 m  closed True   gravel  0  stands  0  cell 572_721
+(no name)                          kart     743 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 573_720
+Lakeside Hammers Speedway          kart     670 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 565_721
+(no name)                          kart     651 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 565_721
+(no name)                          dirt     588 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 565_719
+Brentwood Karting                  kart     586 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 566_721
+(no name)                          kart     547 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 573_720
+Brands Hatch                       dirt     534 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 565_721
+(no name)                          kart     466 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 572_721
+Skegness Raceway                   kart     455 m  ways   6  pit    0 m  closed True   gravel  0  stands  0  cell 572_721
+Pit Lane                           kart     394 m  ways   5  pit  191 m  closed True   gravel  0  stands  1  cell 566_719
+(no name)                          dirt     379 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_719
+(no name)                          kart     368 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 566_720
+(no name)                          kart     368 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 567_719
+(no name)                          dirt     339 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_721
+Brands Hatch                       kart     327 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 565_721
+(no name)                          kart     321 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 573_720
+Rye House Rockets Speedway Track   dirt     306 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_720
+(no name)                          kart     237 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 565_719
+(no name)                          dirt     190 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 566_721
+(no name)                          kart     174 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_720
+(no name)                          kart     115 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_720
+M1 Go Karts                        kart      95 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 573_721
+(no name)                          kart      43 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 569_720
+circuits: 31 (2 track, 20 kart, 9 dirt) in 14 cells
