@@ -12,6 +12,10 @@ on:
         description: "overpass (the Overpass API: quick, just the circuits) or extracts (Geofabrik's whole extracts)"
         required: false
         default: overpass
+      box:
+        description: "overpass only: the area asked for, south,west,north,east (the UK and the Isle of Man by default; a smaller box for a quick look)"
+        required: false
+        default: "49.8,-8.8,61.0,2.0"
       extracts:
         description: "The OpenStreetMap extracts, space separated"
         required: false
@@ -34,45 +38,9 @@ jobs:
           pip install osmium
       - name: Ask the Overpass API
         if: inputs.source == 'overpass'
-        run: |
-          mkdir -p over
-          BOX="49.8,-8.8,61.0,2.0"
-          cat > core.q <<EOF
-          [out:json][timeout:900];
-          (
-            way["highway"="raceway"]($BOX);
-            way["area:highway"="raceway"]($BOX);
-            way["leisure"~"^(track|motor_racing)$"]["sport"]($BOX);
-            relation["leisure"~"^(track|motor_racing)$"]["sport"]($BOX);
-            way["landuse"~"^(raceway|motor_racing)$"]($BOX);
-            relation["landuse"~"^(raceway|motor_racing)$"]($BOX);
-            way["building"="grandstand"]($BOX);
-            way["leisure"="grandstand"]($BOX);
-          );
-          out body geom;
-          EOF
-          cat > more.q <<EOF
-          [out:json][timeout:900];
-          way["highway"="raceway"]($BOX)->.r;
-          (
-            way["surface"~"^(gravel|sand|asphalt|paved|concrete)$"]["highway"!~"."](around.r:400);
-            way["natural"~"^(sand|shingle)$"](around.r:400);
-            way["landuse"~"^(grass|gravel_trap)$"](around.r:400);
-            relation["natural"~"^(sand|shingle)$"](around.r:400);
-          );
-          out body geom;
-          EOF
-          for q in core more; do
-            ok=0
-            for url in https://overpass-api.de/api/interpreter https://overpass.kumi.systems/api/interpreter https://overpass.private.coffee/api/interpreter; do
-              for attempt in 1 2 3; do
-                if curl -sSf --max-time 1000 --data-urlencode "data@$q.q" -o "over/$q.json" "$url" && python3 -c "import json,sys; d=json.load(open('over/$q.json')); sys.exit(0 if d.get('elements') else 1)"; then ok=1; break 2; fi
-                sleep 30
-              done
-            done
-            [ $ok = 1 ] || exit 1
-            ls -l "over/$q.json"
-          done
+        env:
+          BOX: ${{ inputs.box }}
+        run: python3 scripts/overpass_fetch.py --box "$BOX" --tile 2.0 --out over
       - name: Download the extracts
         if: inputs.source != 'overpass'
         env:
@@ -124,7 +92,7 @@ jobs:
             git fetch origin main && git reset --hard origin/main
             python3 scripts/index.py entries
             mkdir -p circuit
-            cp circuit_list.json circuit/list.json
+            python3 scripts/merge_circuit_list.py circuit_list.json circuit/list.json
             cp bake.log circuit/bake.log
             git add index.json circuit
             git diff --cached --quiet && exit 0
