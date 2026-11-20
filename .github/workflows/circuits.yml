@@ -16,6 +16,10 @@ on:
         description: "overpass only: the area asked for, south,west,north,east (the UK and the Isle of Man by default; a smaller box for a quick look)"
         required: false
         default: "49.8,-8.8,61.0,2.0"
+      tile:
+        description: "overpass only: the size of each ask, degrees (smaller when the mirrors are struggling)"
+        required: false
+        default: "2.0"
       extracts:
         description: "The OpenStreetMap extracts, space separated"
         required: false
@@ -40,7 +44,8 @@ jobs:
         if: inputs.source == 'overpass'
         env:
           BOX: ${{ inputs.box }}
-        run: python3 scripts/overpass_fetch.py --box "$BOX" --tile 2.0 --out over
+          TILE: ${{ inputs.tile }}
+        run: python3 scripts/overpass_fetch.py --box "$BOX" --tile "${TILE:-2.0}" --out over
       - name: Download the extracts
         if: inputs.source != 'overpass'
         env:
