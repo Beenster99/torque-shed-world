@@ -12,8 +12,9 @@ import time
 import urllib.parse
 import urllib.request
 
-MIRRORS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter",
-           "https://overpass.private.coffee/api/interpreter", "https://maps.mail.ru/osm/tools/overpass/api/interpreter"]
+# (the mirrors that answered on the night of Nov 19 first: overpass-api.de gave 502 and kumi 504 to almost every ask)
+MIRRORS = ["https://overpass.private.coffee/api/interpreter", "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+           "https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]
 AGENT = "torque-shed-world circuit bake (GitHub Actions; scripts/overpass_fetch.py)"
 
 CORE = """[out:json][timeout:280];
