@@ -16,7 +16,7 @@ MIRRORS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.sys
            "https://overpass.private.coffee/api/interpreter", "https://maps.mail.ru/osm/tools/overpass/api/interpreter"]
 AGENT = "torque-shed-world circuit bake (GitHub Actions; scripts/overpass_fetch.py)"
 
-CORE = """[out:json][timeout:600];
+CORE = """[out:json][timeout:280];
 (
   way["highway"="raceway"]({b});
   way["area:highway"="raceway"]({b});
@@ -60,7 +60,7 @@ def ask(query, must=True, wait=700):
     if must:
         raise SystemExit("Overpass: no answer (%s)" % last)
     print("  (left out: %s)" % last, flush=True)
-    return []
+    return None
 
 
 def main():
@@ -68,7 +68,8 @@ def main():
     ap.add_argument("--box", default="49.8,-8.8,61.0,2.0")
     ap.add_argument("--tile", type=float, default=2.0)
     ap.add_argument("--more-tile", type=float, default=0.25)
-    ap.add_argument("--more-minutes", type=float, default=30)
+    ap.add_argument("--core-minutes", type=float, default=60)
+    ap.add_argument("--more-minutes", type=float, default=20)
     ap.add_argument("--out", default="over")
     a = ap.parse_args()
     s, w, n, e = (float(v) for v in a.box.split(","))
@@ -81,15 +82,19 @@ def main():
             tiles.append((lat, lon, min(lat + a.tile, n), min(lon + a.tile, e)))
             lon += a.tile
         lat += a.tile
-    def run(name, q, boxes, must, budget=None):
-        seen, out = set(), []
+    def run(name, q, boxes, must, budget=None, wait=120):
+        seen, out, missed = set(), [], []
         began = time.time()
         for t in boxes:
             b = "%.4f,%.4f,%.4f,%.4f" % t
             if budget and time.time() - began > budget:
                 print("%s %s: left out (out of time)" % (name, b), flush=True)
+                missed.append(b)
                 continue
-            got = ask(q.format(b=b), must=must) if must else ask(q.format(b=b), must=False, wait=120)
+            got = ask(q.format(b=b), must=must) if must else ask(q.format(b=b), must=False, wait=wait)
+            if got is None:
+                missed.append(b)
+                continue
             new = 0
             for el in got:
                 k = (el.get("type"), el.get("id"))
@@ -102,8 +107,15 @@ def main():
         with open(os.path.join(a.out, name + ".json"), "w") as f:
             json.dump({"elements": out}, f)
         print("%s: %d elements in all" % (name, len(out)), flush=True)
+        if missed:
+            # (ask again later with --box for each: a run adds to what is baked, cell by cell)
+            print("%s: %d boxes left out: %s" % (name, len(missed), " ".join(missed)), flush=True)
         return out
-    core = run("core", CORE, tiles, True)
+    # (each tile asked of every mirror once, five minutes a mirror; a tile no mirror answers is left out and named,
+    # so one slow night still bakes the rest)
+    core = run("core", CORE, tiles, False, budget=a.core_minutes * 60, wait=300)
+    if not core:
+        raise SystemExit("Overpass: no circuits at all")
     # (the run-off only round the raceways found: a small box, a.more_tile degrees, for each square that has one)
     squares = set()
     for el in core:

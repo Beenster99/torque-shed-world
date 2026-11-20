@@ -92,7 +92,7 @@ jobs:
             git fetch origin main && git reset --hard origin/main
             python3 scripts/index.py entries
             mkdir -p circuit
-            cp circuit_list.json circuit/list.json
+            python3 scripts/merge_circuit_list.py circuit_list.json circuit/list.json
             cp bake.log circuit/bake.log
             git add index.json circuit
             git diff --cached --quiet && exit 0
