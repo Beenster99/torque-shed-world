@@ -1,22 +1,183 @@
-(no name)                          dirt    1854 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_723
-Rushmere Motocross                 dirt    1764 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 568_724
-(no name)                          track   1475 m  ways   7  pit    0 m  closed True   gravel  0  stands  0  cell 568_716
-Marks Tey Motocross                dirt    1019 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_723
-(no name)                          dirt     958 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 568_724
-(no name)                          dirt     882 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_724
-Stansted Raceway                   kart     785 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_721
-Foxhall Stadium Stock Car Track    kart     737 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 568_724
-(no name)                          dirt     692 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_717
-(no name)                          dirt     596 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_718
-(no name)                          kart     530 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 568_719
-(no name)                          dirt     379 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_719
-(no name)                          kart     368 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 567_719
-(no name)                          dirt     339 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_721
-(no name)                          kart     328 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 568_716
-Teamworks Karting Letchworth Indoo kart     286 m  ways   2  pit   56 m  closed True   gravel  0  stands  0  cell 567_719
-(no name)                          kart     209 m  ways   5  pit    0 m  closed False  gravel  0  stands  0  cell 568_717
-(no name)                          kart     192 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 568_717
-(no name)                          dirt     156 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_724
-(no name)                          kart     154 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 568_718
-(no name)                          kart      84 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 568_724
-circuits: 21 (1 track, 10 kart, 10 dirt) in 12 cells
+Silverstone                        track   6307 m  ways  35  pit 2487 m  closed False  gravel  0  stands 21  cell 568_715
+(no name)                          dirt    5177 m  ways   6  pit    0 m  closed True   gravel  0  stands  0  cell 565_709
+Whaddon MX Track                   track   3944 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 567_716
+Pembrey                            track   3932 m  ways  31  pit  517 m  closed False  gravel  0  stands  0  cell 566_702
+Thruxton                           track   3771 m  ways  15  pit  451 m  closed True   gravel  0  stands  0  cell 564_713
+Castle Combe                       track   3337 m  ways   4  pit  655 m  closed True   gravel  0  stands  0  cell 565_711
+(no name)                          track   3245 m  ways   7  pit    0 m  closed True   gravel  0  stands  0  cell 564_715
+(no name)                          dirt    2956 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 564_715
+Silverstone                        track   2925 m  ways   8  pit    0 m  closed True   gravel  0  stands  0  cell 568_715
+(no name)                          track   2375 m  ways   2  pit    0 m  closed False  gravel  0  stands  0  cell 564_714
+(no name)                          dirt    2290 m  ways   5  pit    0 m  closed True   gravel  0  stands  0  cell 567_711
+(no name)                          dirt    2241 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 566_711
+Silverstone                        track   2121 m  ways  11  pit  330 m  closed False  gravel  0  stands  0  cell 568_715
+(no name)                          dirt    2104 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 566_715
+(no name)                          dirt    2079 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_706
+(no name)                          dirt    2033 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 566_706
+Rogers Hill Raceway                track   2031 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 563_710
+start                              track   2015 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 564_715
+Grittenham MX Track                dirt    1975 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 566_712
+Silverstone                        track   1934 m  ways  12  pit    0 m  closed False  gravel  0  stands  0  cell 568_715
+Foxhill Track                      dirt    1918 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_713
+(no name)                          track   1910 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 567_708
+Isn't Straight                     track   1910 m  ways   9  pit    0 m  closed True   gravel  0  stands  0  cell 566_712
+(no name)                          track   1800 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_710
+The Grand Tour Celebrity Face Off  track   1746 m  ways   7  pit    0 m  closed True   gravel  0  stands  0  cell 567_714
+Keynsham Motocross                 dirt    1677 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 565_709
+(no name)                          dirt    1676 m  ways   4  pit    0 m  closed True   gravel  0  stands  0  cell 567_701
+(no name)                          track   1671 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 564_715
+Silverstone                        track   1666 m  ways  14  pit    0 m  closed False  gravel  0  stands  1  cell 568_715
+Red Roses Autograss Race Track     dirt    1643 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_701
+(no name)                          dirt    1641 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_705
+(no name)                          dirt    1625 m  ways   5  pit    0 m  closed False  gravel  0  stands  0  cell 564_714
+Thruxton                           kart    1603 m  ways  13  pit    0 m  closed True   gravel  0  stands  0  cell 564_713
+(no name)                          dirt    1603 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 564_709
+(no name)                          dirt    1600 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 567_705
+(no name)                          dirt    1598 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_715
+(no name)                          dirt    1582 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_714
+(no name)                          track   1571 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_711
+(no name)                          track   1555 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_710
+Llandow                            track   1499 m  ways   5  pit  204 m  closed False  gravel  0  stands  0  cell 565_706
+(no name)                          track   1485 m  ways   3  pit    0 m  closed False  gravel  0  stands  0  cell 563_715
+Silverstone                        track   1480 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 568_715
+(no name)                          track   1464 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_708
+(no name)                          dirt    1457 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_706
+(no name)                          track   1456 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_706
+(no name)                          track   1455 m  ways  10  pit    0 m  closed True   gravel  0  stands  0  cell 566_709
+(no name)                          dirt    1455 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 564_703
+(no name)                          track   1453 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 567_707
+(no name)                          dirt    1441 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_714
+(no name)                          track   1419 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_708
+Shenington                         kart    1414 m  ways   7  pit   74 m  closed True   gravel  0  stands  0  cell 568_714
+(no name)                          dirt    1390 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 568_702
+(no name)                          track   1370 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_710
+Fishacre Barton                    dirt    1363 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 561_705
+Phoenix Moto Parc                  dirt    1348 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 562_705
+(no name)                          kart    1342 m  ways   4  pit    0 m  closed True   gravel  0  stands  0  cell 567_713
+(no name)                          dirt    1331 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 567_709
+Spirt Hill MX                      dirt    1298 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 565_712
+Grittenham MX Track                dirt    1269 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_712
+Pit Lane                           kart    1201 m  ways   6  pit  274 m  closed True   gravel  0  stands  0  cell 563_707
+Llandow                            kart    1196 m  ways   8  pit  112 m  closed True   gravel  0  stands  0  cell 565_706
+Cardiff Motorcross Track           dirt    1194 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 565_707
+(no name)                          dirt    1180 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 564_708
+Launcherly MX                      track   1143 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 564_709
+Wroxton MX Track                   dirt    1114 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 568_714
+(no name)                          track   1109 m  ways   3  pit    0 m  closed False  gravel  0  stands  0  cell 567_711
+(no name)                          track   1102 m  ways   7  pit    0 m  closed True   gravel  0  stands  0  cell 566_709
+(no name)                          track   1080 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 566_711
+(no name)                          dirt    1072 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_714
+Gurston Down Speed Hillclimb       track   1033 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 564_712
+(no name)                          kart    1027 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 564_714
+(no name)                          dirt    1009 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 566_715
+(no name)                          track   1004 m  ways   4  pit    0 m  closed False  gravel  0  stands  0  cell 564_715
+Castle Combe                       dirt     996 m  ways   5  pit    0 m  closed False  gravel  0  stands  0  cell 565_711
+(no name)                          dirt     979 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_707
+(no name)                          dirt     957 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_708
+(no name)                          dirt     952 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_714
+(no name)                          dirt     897 m  ways   7  pit    0 m  closed True   gravel  0  stands  0  cell 567_701
+(no name)                          dirt     877 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 564_708
+Silverstone                        dirt     842 m  ways   5  pit    0 m  closed False  gravel  0  stands  0  cell 568_715
+(no name)                          dirt     812 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 564_709
+Pit Lane                           kart     810 m  ways   4  pit  129 m  closed True   gravel  0  stands  0  cell 563_709
+(no name)                          dirt     799 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_702
+(no name)                          dirt     774 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 564_708
+Monnow Events Quad-bike track      dirt     742 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 567_708
+Stroud & District Autograss Club   kart     694 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_710
+(no name)                          dirt     675 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 566_715
+(no name)                          kart     659 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 565_716
+(no name)                          kart     632 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 563_712
+(no name)                          dirt     626 m  ways   4  pit    0 m  closed True   gravel  0  stands  0  cell 565_708
+(no name)                          kart     593 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 563_706
+Pembrey                            kart     583 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_702
+(no name)                          dirt     578 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 565_708
+(no name)                          dirt     549 m  ways   5  pit    0 m  closed True   gravel  0  stands  0  cell 563_706
+(no name)                          dirt     530 m  ways   7  pit    0 m  closed True   gravel  0  stands  0  cell 567_714
+(no name)                          dirt     521 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 568_703
+(no name)                          kart     515 m  ways   4  pit    0 m  closed True   gravel  0  stands  0  cell 565_708
+(no name)                          kart     514 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 565_708
+(no name)                          dirt     499 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_715
+(no name)                          kart     477 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 563_712
+The Ovals Autograss Circuit        dirt     471 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 568_708
+(no name)                          dirt     468 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_703
+Silverstone                        kart     465 m  ways   4  pit    0 m  closed True   gravel  0  stands  0  cell 568_715
+(no name)                          kart     463 m  ways   2  pit    0 m  closed False  gravel  0  stands  0  cell 562_715
+(no name)                          kart     452 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_708
+Pit Lane                           kart     445 m  ways   4  pit  104 m  closed False  gravel  0  stands  0  cell 568_708
+(no name)                          dirt     442 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 564_715
+(no name)                          kart     441 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 562_710
+(no name)                          kart     441 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 564_703
+Back Straight                      kart     430 m  ways  14  pit   12 m  closed False  gravel  0  stands  0  cell 564_709
+Wightlink Warriors Speedway        dirt     418 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_715
+(no name)                          kart     396 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 568_716
+(no name)                          kart     394 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 565_709
+(no name)                          kart     394 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_708
+(no name)                          dirt     392 m  ways   5  pit    0 m  closed True   gravel  0  stands  0  cell 564_714
+(no name)                          dirt     390 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_710
+(no name)                          kart     383 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 562_710
+(no name)                          dirt     377 m  ways   3  pit    0 m  closed False  gravel  0  stands  0  cell 565_708
+Ringwood Raceway                   kart     371 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_712
+(no name)                          kart     370 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_710
+(no name)                          kart     364 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 564_708
+Cardiff Motorcross Track           dirt     358 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 565_707
+Aldermaston Raceway                kart     356 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 565_715
+(no name)                          kart     356 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_710
+(no name)                          kart     343 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 567_711
+(no name)                          kart     342 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 566_715
+Castle Combe                       kart     335 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 565_711
+(no name)                          dirt     330 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_702
+Pembrey                            dirt     329 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_702
+Smeatharpe Racetrack               kart     326 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_707
+Somerset Rebels Speedway           dirt     324 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 564_708
+(no name)                          kart     322 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 564_703
+Poole Pirates Speedway Track       dirt     319 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_712
+(no name)                          kart     316 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_712
+(no name)                          dirt     314 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 566_715
+Standlake Arena                    kart     309 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_714
+Go Karts                           kart     303 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_700
+Taunton BMX                        dirt     302 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 564_707
+(no name)                          kart     294 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 566_709
+South West Banger Racing           kart     283 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 564_703
+Silverstone                        kart     275 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 568_715
+(no name)                          kart     268 m  ways   4  pit    0 m  closed True   gravel  0  stands  0  cell 562_706
+(no name)                          kart     263 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 561_705
+(no name)                          kart     251 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 562_716
+Farmer Palmer’s Go Kart Track      kart     251 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 562_711
+(no name)                          kart     234 m  ways   1  pit    0 m  closed True   gravel  1  stands  0  cell 561_705
+(no name)                          kart     227 m  ways   1  pit    0 m  closed True   gravel  1  stands  0  cell 562_706
+(no name)                          kart     213 m  ways   4  pit    0 m  closed True   gravel  0  stands  0  cell 562_705
+(no name)                          kart     203 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_713
+(no name)                          kart     188 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_711
+(no name)                          kart     181 m  ways   3  pit    0 m  closed True   gravel  0  stands  0  cell 565_707
+(no name)                          kart     180 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_710
+(no name)                          kart     174 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 564_706
+(no name)                          kart     170 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 568_711
+(no name)                          kart     169 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 568_702
+(no name)                          kart     167 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_706
+Follystone Race Track              kart     161 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_701
+(no name)                          kart     158 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_710
+(no name)                          kart     158 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 565_705
+(no name)                          kart     152 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_715
+(no name)                          dirt     144 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_706
+Go-Kart Track                      kart     138 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 562_715
+(no name)                          kart     137 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 565_715
+(no name)                          kart     126 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 565_710
+(no name)                          kart     123 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 563_712
+Pedal Tractors                     kart     114 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 566_701
+(no name)                          kart     111 m  ways   2  pit    0 m  closed True   gravel  0  stands  0  cell 568_702
+(no name)                          kart     104 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 565_707
+(no name)                          kart      99 m  ways   1  pit    0 m  closed True   gravel  3  stands  0  cell 562_710
+Go Karting Track                   kart      98 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_713
+Supa Karts                         kart      94 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_705
+(no name)                          kart      90 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 562_706
+(no name)                          kart      64 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 563_703
+(no name)                          kart      61 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_715
+(no name)                          kart      56 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 565_708
+(no name)                          kart      56 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_709
+(no name)                          kart      52 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 563_701
+F1 Cars                            kart      49 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_705
+Quad Bikes                         kart      30 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_705
+(no name)                          kart      29 m  ways   1  pit    0 m  closed True   gravel  3  stands  0  cell 562_706
+(no name)                          kart      10 m  ways   1  pit    0 m  closed True   gravel  0  stands  0  cell 562_710
+(no name)                          dirt       8 m  ways   1  pit    0 m  closed False  gravel  0  stands  0  cell 561_705
+circuits: 182 (35 track, 81 kart, 66 dirt) in 72 cells
