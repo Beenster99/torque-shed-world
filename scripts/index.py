@@ -69,13 +69,15 @@ def main(argv):
     places = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.places"), recursive=True)), index, "places", "places")
     # [race tracks stage 1] the circuits (entries/cROW_COL.circuit, scripts/circuit_bake.py): circuit/ and "circuits"
     circuits = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.circuit"), recursive=True)), index, "circuit", "circuits")
+    # [everyday kits stage 2] the kits' map data (entries/cROW_COL.kits, scripts/kits_bake.py): kits/ and "kits"
+    kits = merge_files(sorted(glob.glob(os.path.join(argv[1], "**", "*.kits"), recursive=True)), index, "kits", "kits")
     buildings = merge_buildings(sorted(glob.glob(os.path.join(argv[1], "**", "*.bld"), recursive=True)), index)
     with open(INDEX, "w") as f:
         json.dump(index, f, indent=1, sort_keys=False)
         f.write("\n")
     print("index: %d added, %d cells; %d sketches, %d cells' streams, %d cells' trees, %d cells' features, %d cells' ground,"
-          " %d cells' paths, %d cells' roadx, %d cells' places, %d cells' buildings, %d cells' circuits" % (
-              added, len(index["cells"]), sketches, streams, trees, features, grounds, paths, roadx, places, buildings, circuits))
+          " %d cells' paths, %d cells' roadx, %d cells' places, %d cells' buildings, %d cells' circuits, %d cells' kits" % (
+              added, len(index["cells"]), sketches, streams, trees, features, grounds, paths, roadx, places, buildings, circuits, kits))
 
 
 def block_of(cell):
